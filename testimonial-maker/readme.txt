@@ -4,7 +4,7 @@ Donate link: https://paypal.me/awplife
 Tags: testimonial, client testimonial, testimonials, client feedback, easy testimonial
 Requires at least: 4.0
 Tested up to: 6.7.1
-Stable tag: 1.1.28
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -161,6 +161,10 @@ The following are other recommended plugins by the author:
 
  
 == Changelog ==
+= 1.2.1 =
+* Color Selection Fixed
+* Testing plugin for wordpress 6.7.1
+
 
 = 1.1.28 =
 * Bug Fix: Fixed.
