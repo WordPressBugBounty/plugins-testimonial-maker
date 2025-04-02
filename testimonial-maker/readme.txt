@@ -3,12 +3,12 @@ Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkh
 Donate link: https://paypal.me/awplife
 Tags: testimonial, client testimonial, testimonials, client feedback, easy testimonial
 Requires at least: 4.0
-Tested up to: 6.7.1
-Stable tag: 1.2.1
+Tested up to: 6.7.2
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easy to use and irresistible! This WordPress testimonial plugin helped us create a stunning customer testimonials slider effortlessly. Highly recommend!
+Easy & powerful WordPress testimonial plugin! Create stunning customer testimonial sliders effortlessly. Highly recommended for great reviews!
 
 == Description ==
 
@@ -161,6 +161,9 @@ The following are other recommended plugins by the author:
 
  
 == Changelog ==
+= 1.2.2 =
+* Testing plugin for wordpress 6.7.2
+
 = 1.2.1 =
 * Color Selection Fixed
 * Testing plugin for wordpress 6.7.1
