@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 Plugin Name: Testimonial Maker
 Plugin URI:  https://awplife.com/
 Description: A very easy Plugin for make testimonials.
-Version:     1.2.2
+Version:     1.2.3
 Author:      A WP Life
 Author URI:  https://awplife.com/
 Text Domain: testimonial-maker
@@ -38,7 +38,7 @@ if ( ! class_exists( 'awl_testimonial' ) ) {
 
 		protected function _constants() {
 			// Plugin Version
-			define( 'TML_PLUGIN_VER', '1.2.2' );
+			define( 'TML_PLUGIN_VER', '1.2.3' );
 
 			// Plugin Text Domain
 			define( 'TML_TXTDM', 'testimonial-maker' );
