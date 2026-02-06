@@ -1,0 +1,199 @@
+/* Template 9 - Social Media Style */
+.testimonial {
+    background: #ffffff;
+    padding: 25px;
+    margin: 0 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e1e8ed;
+    transition: all 0.3s ease;
+}
+
+.testimonial:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+    border-color: #1da1f2;
+}
+
+/* Header */
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial .pic {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    flex-shrink: 0;
+    border: 2px solid #e1e8ed;
+    transition: all 0.3s ease;
+}
+
+.testimonial:hover .pic {
+    border-color: #1da1f2;
+}
+
+.testimonial .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-user-info {
+    flex: 1;
+}
+
+.testimonial-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #14171a;
+    margin: 0 0 3px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-verified-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: #1da1f2;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.testimonial-verified-badge i {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.testimonial-designation {
+    margin: 0;
+}
+
+.testimonial-link {
+    font-size: 13px;
+    color: #657786;
+    margin: 0;
+}
+
+.testimonial-link a {
+    color: #1da1f2;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.testimonial-link a:hover {
+    text-decoration: underline;
+}
+
+/* Description */
+.testimonial .description {
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+/* Star Rating */
+.testimonial-rating {
+    margin-bottom: 15px;
+}
+
+.testimonial-rating i {
+    color: #ffad1f;
+    font-size: 15px;
+    margin: 0 2px;
+}
+
+/* Footer */
+.testimonial-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid #e1e8ed;
+    color: #657786;
+    font-size: 13px;
+}
+
+.testimonial-date {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-date i {
+    margin-right: 5px;
+}
+
+.testimonial-social-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.testimonial-social-action {
+    display: flex;
+    align-items: center;
+    color: #657786;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.testimonial-social-action:hover {
+    color: #1da1f2;
+}
+
+.testimonial-social-action i {
+    margin-right: 5px;
+}
+
+/* Platform Badge */
+.testimonial-platform {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f5f8fa;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    color: #657786;
+    font-weight: 600;
+}
+
+.testimonial-platform i {
+    margin-right: 5px;
+    color: #1da1f2;
+}
+
+/* Owl Carousel Controls */
+.owl-theme .owl-controls {
+    margin-top: 30px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #e1e8ed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #1da1f2;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .testimonial {
+        padding: 20px;
+    }
+    
+    .testimonial-footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+

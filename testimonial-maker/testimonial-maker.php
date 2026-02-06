@@ -4,15 +4,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 /**
 @package Testimonial Maker
-Plugin Name: Testimonial Maker
-Plugin URI:  https://awplife.com/
-Description: A very easy Plugin for make testimonials.
-Version:     1.2.4
-Author:      A WP Life
-Author URI:  https://awplife.com/
-Text Domain: testimonial-maker
-Domain Path: /languages
-License:     GPL2
+ * Plugin Name:       Testimonial Maker
+ * Plugin URI:        https://awplife.com/wordpress-plugins/testimonial-premium/
+ * Description:       A very easy Plugin for make testimonials.
+ * Version:           1.2.6
+ * Requires at least: 5.0
+ * Requires PHP:      7.0
+ * Author:            A WP Life
+ * Author URI:        https://profiles.wordpress.org/awordpresslife
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       testimonial-maker
+ * Domain Path:       /languages
+ * License:           GPL2
 
 Testimonial Maker is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -38,13 +42,13 @@ if ( ! class_exists( 'awl_testimonial' ) ) {
 
 		protected function _constants() {
 			// Plugin Version
-			define( 'TML_PLUGIN_VER', '1.2.4' );
+			define( 'TML_PLUGIN_VER', '1.2.6' );
 
 			// Plugin Text Domain
 			define( 'TML_TXTDM', 'testimonial-maker' );
 
 			// Plugin Name
-			define( 'TML_PLUGIN_NAME', __( 'Testimonial Maker', TML_TXTDM ) );
+			define( 'TML_PLUGIN_NAME', 'Testimonial Maker' );
 
 			// Plugin Slug
 			define( 'TML_PLUGIN_SLUG', 'testimonial-maker' );
@@ -60,8 +64,8 @@ if ( ! class_exists( 'awl_testimonial' ) ) {
 		} // end of constructor function
 
 		protected function _hooks() {
-			// Load text domain
-			add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+			// Load text domain at init action (WordPress 6.7+ requirement)
+			add_action( 'init', array( $this, 'load_textdomain' ), 0 );
 
 			// add testimonial menu item, change menu filter for multisite
 			add_action( 'admin_menu', array( $this, 'tmonial_menu' ), 101 );
@@ -145,8 +149,9 @@ if ( ! class_exists( 'awl_testimonial' ) ) {
 					$website_link = '';
 				}
 				?>
-					
+
 				<p><input type="text" class="form-control" id="website_link" name="website_link" style="margin-left: 15px; width: 300px;" value="<?php echo esc_url( $website_link ); ?>" /></p>
+
 				<p><?php esc_html_e( 'Client Designation', 'testimonial-maker' ); ?></p>
 				<?php
 				if ( isset( $testimonial_post_settings['designation'] ) ) {
@@ -155,8 +160,36 @@ if ( ! class_exists( 'awl_testimonial' ) ) {
 					$designation = '';
 				}
 				?>
-					
+
 				<p><input type="text" class="form-control" id="designation" name="designation" style="margin-left: 15px; width: 300px;" value="<?php echo esc_html( $designation ); ?>" /></p>
+
+				<p><?php esc_html_e( 'Star Rating', 'testimonial-maker' ); ?></p>
+				<?php
+				if ( isset( $testimonial_post_settings['star_rating'] ) ) {
+					$star_rating = $testimonial_post_settings['star_rating'];
+				} else {
+					$star_rating = '5';
+				}
+				?>
+				<p>
+					<select class="form-control" id="star_rating" name="star_rating" style="margin-left: 15px; width: 300px;">
+						<option value="1" <?php selected( $star_rating, '1' ); ?>>1 Star</option>
+						<option value="2" <?php selected( $star_rating, '2' ); ?>>2 Stars</option>
+						<option value="3" <?php selected( $star_rating, '3' ); ?>>3 Stars</option>
+						<option value="4" <?php selected( $star_rating, '4' ); ?>>4 Stars</option>
+						<option value="5" <?php selected( $star_rating, '5' ); ?>>5 Stars</option>
+					</select>
+				</p>
+
+				<p><?php esc_html_e( 'Video URL (YouTube)', 'testimonial-maker' ); ?></p>
+				<?php
+				if ( isset( $testimonial_post_settings['video_url'] ) ) {
+					$video_url = $testimonial_post_settings['video_url'];
+				} else {
+					$video_url = '';
+				}
+				?>
+				<p><input type="text" class="form-control" id="video_url" name="video_url" placeholder="https://www.youtube.com/watch?v=..." style="margin-left: 15px; width: 300px;" value="<?php echo esc_url( $video_url ); ?>" /></p>
 			</div>
 			<?php
 			// syntax: wp_nonce_field( 'name_of_my_action', 'name_of_nonce_field' );
@@ -172,6 +205,8 @@ if ( ! class_exists( 'awl_testimonial' ) ) {
 					$testimonial_post_settings         = array(
 						'website_link' => sanitize_text_field( $_POST['website_link'] ),
 						'designation'  => sanitize_text_field( $_POST['designation'] ),
+						'star_rating'  => sanitize_text_field( $_POST['star_rating'] ),
+						'video_url'    => sanitize_text_field( $_POST['video_url'] ),
 					);
 					$awl_testimonial_shortcode_setting = 'awl_testimonial' . $post_id;
 					update_post_meta( $post_id, $awl_testimonial_shortcode_setting, $testimonial_post_settings );

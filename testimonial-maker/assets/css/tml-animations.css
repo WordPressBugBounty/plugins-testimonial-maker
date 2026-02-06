@@ -1,0 +1,136 @@
+/* TML Animation Effects */
+
+/* Entrance Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes flipInX {
+    from {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation Classes */
+.tml-animate-fade {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.tml-animate-slide-up {
+    animation: slideInUp 0.8s ease-out;
+}
+
+.tml-animate-slide-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.tml-animate-slide-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+.tml-animate-zoom {
+    animation: zoomIn 0.6s ease-out;
+}
+
+.tml-animate-flip {
+    animation: flipInX 0.8s ease-out;
+}
+
+.tml-animate-bounce {
+    animation: bounceIn 0.8s ease-out;
+}
+
+/* Stagger Animation Delays */
+.tml-animate-delay-1 { animation-delay: 0.1s; }
+.tml-animate-delay-2 { animation-delay: 0.2s; }
+.tml-animate-delay-3 { animation-delay: 0.3s; }
+.tml-animate-delay-4 { animation-delay: 0.4s; }
+.tml-animate-delay-5 { animation-delay: 0.5s; }
+.tml-animate-delay-6 { animation-delay: 0.6s; }
+
+/* Parallax Effect */
+.tml-parallax {
+    transition: transform 0.3s ease-out;
+}
+
+/* Lazy Load Fade In */
+.tml-lazy-load {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.tml-lazy-load.loaded {
+    opacity: 1;
+}
+

@@ -1,505 +1,247 @@
-﻿=== Testimonial - Customer Feedback, Client Testimonial, Review ===
+﻿=== Testimonial Customer Feedback ===
 Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK
 Donate link: https://paypal.me/awplife
-Tags: testimonial, client testimonial, testimonials, client feedback, easy testimonial
-Requires at least: 4.0
-Tested up to: 6.8.2
-Stable tag: 1.2.4
+Tags: testimonial, testimonials, customer reviews, client feedback, review slider
+Requires at least: 5.0
+Tested up to: 6.9
+Stable tag: 1.2.6
+Requires PHP: 7.0
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Easy & powerful WordPress testimonial plugin! Create stunning customer testimonial sliders effortlessly. Highly recommended for great reviews!
+Display client testimonials with customizable layouts, slider effects, and responsive design. Simple setup with shortcode support.
 
 == Description ==
 
-= Testimonial - Client Review, Feedback, Client Testimonial, Customer Feedback = 
+= A Complete Testimonial Solution for Customer Review, Rating, and Feedback =
 
-Easy Testimonials is an easy-to-use plugin that allows users to add Testimonials to the sidebar, as a widget, or to embed testimonials into a Page or Post using the shortcode. 
+Starter Testimonial helps you showcase customer feedback and client reviews on your WordPress website. Whether you run a small business, agency, or e-commerce store, displaying genuine testimonials builds trust with potential customers.
 
-This is the new “Testimonial WordPress Plugin”, Who based on Irresistible CSS & JS, So it is very amazing and easy to use.
+**Check Pro Demo:** **[Testimonial Premium](https://awplife.com/demo/testimonial-premium/)**
+**More About Pro:** **[Testimonial Premium Details](https://awplife.com/wordpress-plugins/testimonial-wordpress-plugin/)**
+**Where To Buy:** **[Buy Testimonial Premium](https://awplife.com/account/signup/testimonial-premium)**
 
-With this WordPress Plugin, you can show What is your clients say about your work.
-
-It is important to understand that this WordPress Plugin intended use case: A small business with up to a few hundred reviews may be organized into multiple categories, plus a form for accepting new testimonials.
-
-This is the best Plugin for any site Because this plugin has many configurations to show your client’s feedback, you can also show your client’s designation and site links.
-
-You can use it also in the sidebar like a widget, Just paste the shortcode in the text widget. this plugin easier to customize.
-
-It will be very helpful for new users, this plugin very easy in use for new and old users of WordPress.
-
-This plugin has many configurations you can see below.
+= How To Use =
 
 https://youtu.be/bB1RmgGVwTY
 
-It s important to understand this plugin s intended use case: A small business with up to a few hundred testimonials or reviews, 
-maybe organized into multiple categories, plus a form for accepting new testimonials.
+This testimonial plugin creates a dedicated post type for managing reviews. Add client names, photos, designations, and website links for each testimonial. Once saved, embed your testimonials anywhere using a simple shortcode.
 
-**Standard Features**
+= Why Use Testimonials on Your Website? =
 
-* Responsive Testimonial
-* Bootstrap 3.3.6 Based
-* Testimonial 1 Transitions Effects 
-* 4 Testimonial Templet Design
-* Title Color Limited
-* designation Color Limited
-* description Color Limited
-* Testimonial Auto Play
-* Testimonial Pagination Bullets
-* Testimonial Columns settings
+Customer reviews influence buying decisions. When visitors see positive feedback from real clients, they feel more confident about your products or services. A well-placed testimonial section can:
 
+* Build credibility with first-time visitors
+* Highlight your track record and expertise
+* Increase conversions on landing pages
+* Add social proof to service pages
 
-**How to use plugin?**
+= Core Features =
 
-Downloade & install the plugin into your site. After successful installation of the plugin go to plugins "DOC" menu for help and instructions.
+**Easy Testimonial Management**
+Add testimonials like regular posts. Include client name as the title, feedback in the editor, and upload a profile photo using the featured image option.
 
+**Client Information Fields**
+Each testimonial includes fields for client designation (job title or role) and website URL. Display these details alongside the review.
 
-**Upgrade To Premium Plugin - <a href="https://awplife.com/wordpress-plugins/testimonial-premium/">Click Here</a>**
+**Shortcode Integration**
+Generate a shortcode to place testimonials in pages, posts, or text widgets. Works with any theme.
 
-**Check Premium Plugin Demo - <a href="https://awplife.com/demo/testimonial-premium/">Click Here</a>**
+**Responsive Slider Display**
+Testimonials appear in a slider format that adapts to mobile, tablet, and desktop screens. Visitors can browse through reviews smoothly.
 
+**Template Options**
+Choose from 8 layout designs to match your website style. Each template presents testimonials differently.
 
-**Pro Features**
+**Color Customization**
+Adjust colors for title text, designation, and testimonial content. Match the display with your brand colors.
 
-* Responsive Testimonial
-* Bootstrap Based
-* Animated Transitions Effects
-* Testimonial Transitions Slide Speed
-* Unlimited Color
-* 23 Testimonial Templet Design
-* designation Unlimited Color
-* Testimonial Auto Play
-* Testimonial Font Size
-* 2 Pagination Style
-* Testimonial Columns settings
-* Testimonial Custom CSS Style
+**Star Ratings**: (If applicable) Visualize customer satisfaction.
 
+**Autoplay Control**
+Enable or disable automatic sliding. Configure pagination bullets for manual navigation.
 
-== Screenshots ==
+**Column Settings**
+Control how many testimonials appear per row based on your layout preferences.
 
-1. Testimonial settings
-2. Testimonial preview
-3. Testimonial preview
-4. Testimonial preview
-5. Testimonial preview
-6. Testimonial Responsive
-7. Testimonial Responsive
+= How It Works =
 
+1. Go to Testimonial Maker menu in your dashboard
+2. Click "Add New Testimonial"
+3. Enter client name as title and feedback in the editor
+4. Add designation and website link in the meta fields
+5. Set a featured image for the client photo
+6. Publish and configure display settings
+7. Copy the shortcode and paste it where you want testimonials to appear
 
- == Installation ==
+= Use Cases =
 
-Install plugin either via the WordPress.org plugin directory or by uploading the files to your server.
+* **Service Businesses** – Show client feedback on your homepage or services page
+* **Freelancers** – Add testimonials to your portfolio
+* **Online Stores** – Display product reviews in a slider widget
+* **Agencies** – Feature client success stories
 
-After activating plugin, go to plugin menu.
+= Free vs Pro Comparison =
 
-Login into WordPress admin dashboard. Go to menu: Testimonial --> Add New Testimonial
+**Free Version Includes:**
 
-Create Testimonial & configure settings and save.
+* Unlimited testimonials
+* 8 template designs
+* Video Testimonial (Youtube Video)
+* Star Ratings
+* Star Rating Color
+* Video Playback Mode
+* Box Shadow
+* Border Radius
+* Animation Speed
+* Hover Effect
+* Animation Speed
+* Image Shape
+* Lazy Loading
+* Responsive slider
+* Basic color options (title, designation, description)
+* Single transition effect
+* Autoplay toggle
+* Pagination bullets
+* Column layout settings
+* Shortcode embedding
+* Widget compatible
 
-Copy shortcode and paste shortcode into any Page / Post. And view page for testimonial output.
+**[Testimonial Premium Version](https://awplife.com/wordpress-plugins/testimonial-wordpress-plugin/) Adds:**
 
-That's it. You're ready to go!
+* 27 template designs
+* Video Testimonial (Youtube,Vimeo,Local)
+* Star Ratings
+* Star Rating Color
+* Video Playback Mode
+* Star Ratings Hide & Show
+* Testimonial Order
+* Auto Height Content
+* RTL Support
+* Autoplay toggle
+* Image Shape
+* Multiple animated transition effects
+* Transition speed control
+* Unlimited color customization
+* Font size adjustment
+* 2 pagination styles
+* Column layout settings
+* Custom CSS input field
+* Priority support
+
+= Testimonial Slider Works With =
+
+* All standard WordPress themes
+* Page builders (using shortcode blocks)
+* Widget areas and sidebars
+* Custom post layouts
+
+== Our More Free Plugins ==
+
+* [Portfolio Filter Gallery](https://wordpress.org/plugins/portfolio-filter-gallery/)
+* [Media Slider](https://wordpress.org/plugins/media-slider/)
+* [Weather Effect Plugin](https://wordpress.org/plugins/weather-effect/)
+* [Grid Gallery Plugin](https://wordpress.org/plugins/new-grid-gallery/)
+* [Image Gallery Plugin](https://wordpress.org/plugins/new-image-gallery/)
+* [Responsive Slider Gallery](https://wordpress.org/plugins/responsive-slider-gallery/)
+
+== Installation ==
+
+1. Upload the plugin folder to `/wp-content/plugins/` directory or install directly from the WordPress plugin repository
+2. Activate the plugin through the Plugins menu
+3. Navigate to Testimonial Maker in your admin menu
+4. Click "Add New Testimonial" to create your first testimonial
+5. Configure display settings under "Testimonial Setting"
+6. Copy the generated shortcode and paste it into any page or post
 
 == Frequently Asked Questions ==
 
-Have any queries?
+= How do I add a new testimonial? =
 
-Please post your question on plugin support forum
+Go to Testimonial Maker > Add New Testimonial. Enter the client's name as the title, write their feedback in the content editor, and optionally add a featured image for their photo.
 
-https://wordpress.org/support/plugin/testimonial-maker/
+= Where do I find the shortcode? =
 
-= Recommended Plugins =
+After saving your testimonials, visit the Testimonial Setting page. The shortcode will be displayed there. Copy and paste it into any page, post, or text widget.
 
-The following are other recommended plugins by the author:
+= Can I show testimonials in a sidebar widget? =
 
-* [Portfolio Filter Gallery](https://wordpress.org/plugins/portfolio-filter-gallery/ "Best Portfolio Filter Gallery") - The Gallery Plugin to create awesome Portfolio Filter Gallery Plugin in minutes. 
+Yes. Add a Text widget to your sidebar and paste the testimonial shortcode inside it. The testimonials will display in the widget area.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/portfolio-filter-gallery-premium/">Click Here</a>**
+= Does this plugin work with my theme? =
 
-* [Media Slider](https://wordpress.org/plugins/media-slider/ "Best Media Slider") - The Media Slider Plugin to create Media / Video Slider Gallery Plugin in minutes. 
+The plugin is designed to work with any properly coded WordPress theme. The responsive design adapts to different theme layouts.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/media-slider-premium/">Click Here</a>**
+= How do I change the testimonial colors? =
 
-* [Best Weather Effect Plugin](https://wordpress.org/plugins/weather-effect/ "Best Weather Effect Plugin") - Very Simple And Easy To Design Your Sites With Multiple Effects.
+Go to Testimonial Setting in your admin menu. You will find color options for title, designation, and description text.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/weather-effect-premium/">Click Here</a>**
+= Can I control how many testimonials show at once? =
 
-* [Best Grid Gallery Plugin](https://wordpress.org/plugins/new-grid-gallery/ "Best Grid Galley Plugin") - Easy Grid Gallery Widget - Displaying your image in Page & Post widget/sidebar area with very easy.Allows you to customize it to looking exactly what you want.
+Yes. The settings page includes column options to display testimonials in different grid layouts.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/grid-gallery-premium/">Click Here</a>**
+= Is the slider mobile friendly? =
 
-* [Social Media Plugin](https://wordpress.org/plugins/new-social-media-widget/ "Social Media") - Display your Social Media Plugin into Widget/Sidebar in WordPress site with very easily.
+The testimonial slider is fully responsive. It automatically adjusts for smartphones, tablets, and desktop screens.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/social-media-widget-premium//">Click Here</a>**
+= How do I disable autoplay on the slider? =
 
-* [Image Gallery Plugin](https://wordpress.org/plugins/new-image-gallery/ "Image Gallery Plugin") - Gallery Lightbox - Displays all gallery images into the lightbox slider in just a few seconds.
+Navigate to Testimonial Setting and find the autoplay toggle option. You can turn off automatic sliding from there.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/image-gallery-premium/">Click Here</a>**
+= Can I add a client website link? =
 
-* [Slider Plugin](https://wordpress.org/plugins/responsive-slider-gallery/ "Slider Plugin") - Fully Responsive Slider Gallery For Wordpress ,You can Show Slider Into Page/Post & Widget/Sidebar By Generate Shortcode.
+When creating a testimonial, you will see a field for "Client Website URL". Enter the URL and it will be linked with the testimonial.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/responsive-slider-gallery-premium/">Click Here</a>**
+= What is the difference between free and pro version? =
 
-* [Contact Form](https://wordpress.org/plugins/new-contact-form-widget/ "Contact Form Plugin") - Contact Form Widget Shortcode Plugin For WordPress.
+The free version includes 4 templates, basic colors, and standard slider features. The pro version offers 23 templates, animated transitions, unlimited colors, font customization, and custom CSS options.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/contact-form-premium/">Click Here</a>**
+= How do I upgrade to the pro version? =
 
-* [Best Responsive Slider Plugin](https://wordpress.org/plugins/slider-responsive-slideshow/ "Responsive Slider Plugin") - Fully Responsive Light Weight Easy Powerful WordPress Slider Slideshow Plugin.
+Visit [awplife.com/](https://awplife.com/) to purchase the premium version with additional features.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/slider-responsive-slideshow-premium//">Click Here</a>**
+= Where can I get support? =
 
-* [Video Gallery Plugin](https://wordpress.org/plugins/new-video-gallery/ "Best Video Gallery Plugin") - The Best Responsive video gallery For Wordpress.
+For free version support, use the [WordPress.org support forum](https://wordpress.org/support/plugin/testimonial-maker/). Pro users receive priority support through the AWP Life website.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/video-gallery-premium/">Click Here</a>**
+== Screenshots ==
 
-* [Facebook Like Share Follow Button](https://wordpress.org/plugins/new-facebook-like-share-follow-button/ "Facebook Like Share Follow Button") - Display your Facebook Like Share Follow Button Plugin into Page/Post & Widget/Sidebar in WordPress sites with very easily.
- 
-* [Google Plus Badge](https://wordpress.org/plugins/new-google-plus-badge/ "Google Plus Badge") - Google+ Badge & Profile Widget For Show Into Widget & sidebar
+1. Testimonial preview
+2. Testimonial preview 
+3. Testimonial preview 
+4. Testimonial preview 
+5. Testimonial preview 
+6. Testimonial preview 
+7. Testimonial preview 
+8. Testimonial preview 
 
-* [Facebook Likebox Plugin](https://wordpress.org/plugins/facebook-likebox-widget-and-shortcode/ "Facebook Likebox Plugin") - Facebook Light Box Plugin For Wordpress 
-
-
- 
 == Changelog ==
+
+= 1.2.6 =
+* Template 5,6,7,8 Added
+* Video Testimonial Added
+* Testimonial Star Rating Added
+* Tested up to WordPress 6.9
+
+= 1.2.5 =
+* Fixed: Translation loading notice in WordPress 6.7+ (_load_textdomain_just_in_time warning)
+* Changed textdomain loading from 'plugins_loaded' to 'init' hook for WordPress 6.7 compatibility
+* Tested up to WordPress 6.9
+
 = 1.2.4 =
-* Testing plugin for wordpress 6.8.2
+* Tested with WordPress 6.8.3
 
 = 1.2.3 =
-* Testing plugin for wordpress 6.8.1
+* Tested with WordPress 6.8.1
 
 = 1.2.2 =
-* Testing plugin for wordpress 6.7.2
+* Tested with WordPress 6.7.2
 
 = 1.2.1 =
-* Color Selection Fixed
-* Testing plugin for wordpress 6.7.1
-
-
-= 1.1.28 =
-* Bug Fix: Fixed.
-* Testing plugin for wordpress 6.7.1
-
-= 1.1.27 =
-* Bug Fix: Fixed.
-* Testing plugin for wordpress 6.6.2
-
-= 1.1.26 =
-
-* Testing plugin for wordpress 6.6.1
-
-= 1.1.25 =
-
-* Testing plugin for wordpress 6.5.4
-
-= 1.1.24 =
-
-* Bug Fix: Fixed.
-* Additional changes: None.
-* Testing plugin for wordpress 6.4.3
-
-= 1.1.23 =
-
-* Bug Fix: Fixed.
-* Additional changes: None.
-* Testing plugin for wordpress 6.4.2
-
-= 1.1.22 =
-
-* Bug Fix: Fixed.
-* Additional changes: None.
-* Testing plugin for wordpress 6.4.2
-= 1.1.21 =
-
-* Enhancements: tested for wordpress 6.3.2
-
-= 1.1.20=
-
-* Enhancements: tested for wordpress 6.3.1
-
-= 1.1.19=
-
-* Enhancements: tested for wordpress 6.2.1
-* Bug Fix: Fixed
-
-= 1.1.18 =
-
-* Enhancements: tested for wordpress 6.1.1
-
-= 1.1.17 =
-
-* wordpress security isshues fixed.
-* Enhancements: tested for wordpress 6.0.1
-
-= 1.1.16 =
-
-* Enhancements: tested for wordpress 6.0.1
-
-= 1.1.15 =
-
-* Enhancements: tested for wordpress 5.9.3
-
-= 1.1.14 =
-
-* Enhancements: tested for wordpress 5.9
-
-= 1.1.13 =
-
-* Enhancements: tested for wordpress 5.8.2
-* wordpress security isshues fixed
-
-= 1.1.12 =
-
-* Enhancements: tested for wordpress 5.8.1
-
-= 1.1.11 =
-
-* Enhancements: tested for wordpress 5.7.2
-
-= 1.1.10 =
-
-* Enhancements: tested for wordpress 5.7.1
-
-= 1.1.8 =
-
-* Enhancements: tested for wordpress 5.6.2
-
-= 1.1.7 =
-
-* Enhancements: tested for wordpress 5.5.3
-
-= 1.1.6 =
-
-* Enhancements: tested for wordpress 5.5.3
-
-= 1.1.5 =
-
-* Enhancements: tested for wordpress 5.5.1
-
-= 1.1.4 =
-
-* Enhancements: tested for wordpress 5.5
-
-= 1.1.3 =
-
-* Enhancements: tested for wordpress 5.4.2
-
-= 1.1.2 =
-
-* Enhancements: tested for wordpress 5.4.1
-
-= 1.1.1 =
-
-* Enhancements: tested for wordpress 5.3.2
-
-= 1.1.0 =
-
-* Enhancements: tested for wordpress 5.3.2
-
-= 1.0.15 =
-
-* Enhancements: tested for wordpress 5.2.4
-* Bug Fix: Fixed
-* Additional changes: setting page updated and bootstrap library updated
-
-= 1.0.14 =
-
-* Bug Fix: Fixed
-
-= 1.0.13 =
-
-* Enhancements: tested for wordpress 5.2.3
-
-= 1.0.12 =
-
-* Enhancements: tested for wordpress 5.2.2
-* Bug Fix: Fixed
-* Additional changes: image added. 
-
-= 1.0.11 =
-
-* Enhancements: tested for wordpress 5.2.2
-* Bug Fix: Fixed
-* Additional changes: image added. 
-
-= 1.0.10 =
-
-* Enhancements: tested for wordpress 5.2.2
-* Bug Fix: Fixed
-* Additional changes: image added. 
-
-= 1.0.9 =
-
-* Enhancements: tested for wordpress 5.2.2
-* Bug Fix: Fixed
-* Additional changes: image added. 
-
-= 1.0.8 =
-
-* Enhancements: tested for wordpress 5.2.2
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 1.0.7 =
-
-* Enhancements: tested for wordpress 5.2.1
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 1.0.6 =
-
-* Enhancements: tested for wordpress 5.2.1
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 1.0.5 =
-
-* Enhancements: tested for wordpress 5.1.1
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 1.0.4 =
-
-* Enhancements: tested for wordpress 5.1.1
-* Bug Fix: Fixed
-* Additional changes: columns setting added and template changed. 
-
-= 1.0.3 =
-
-* Enhancements: tested for wordpress 5.1.1
-* Bug Fix: Fixed
-* Additional changes: custom css setting added. 
-
-= 1.0.2 =
-
-* Enhancements: tested for wordpress 5.1.1
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 1.0.1 =
-
-* Enhancements: tested for wordpress 5.1
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 1.0.0 =
-
-* Enhancements: tested for wordpress 5.0.3
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 0.2.2 =
-
-* Enhancements: tested for wordpress 5.0.3
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 0.2.1 =
-
-* Enhancements: tested for wordpress 5.0.2
-* Bug Fix: Fixed
-* Additional changes: None. 
-
-= 0.2.0 =
-
-* Enhancements: tested for wordpress 5.0.2
-* Bug Fix: Yes
-* Additional changes: None. 
-
-= 0.0.19 =
-
-* Enhancements: tested for wordpress 5.0.1
-* Bug Fix: typos fix
-* Additional changes: None. 
-
-= 0.0.18 =
-
-* Enhancements: None.
-* Bug Fix: None,
-* Additional changes: update links, 
-
-= 0.0.17 =
-
-* Enhancements: Added hindi translation file.
-* Bug Fix: None,
-* Additional changes: None, 
-
-= 0.0.16 =
-
-* Enhancements: tested for wordpress 4.9.8
-* Bug Fix: typos fix
-* Additional changes: plugin is translation ready. 
-
-= 0.0.15 =
-
-* Enhancements: tested for wordpress 4.9
-* Bug Fix: None
-* Additional changes: yes, Added theme menu. 
-
-*Feature Enhancements: Version 0.0.14
-* Enhancements: None
-* Bug Fix: Fix
-* Additional changes: None
-
-*Feature Enhancements: Version 0.0.13
-* Enhancements: None
-* Bug Fix: Fix
-* Additional changes: None
-
-*Feature Enhancements: Version 0.0.12
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-*Feature Enhancements: Version 0.0.11
-* Enhancements: Tested Upto New version 4.8.1
-* Bug Fix: None
-* Additional changes: None
-
-*Feature Enhancements: Version 0.0.10
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-Feature Enhancements: Version 0.0.9
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-Feature Enhancements: Version 0.0.8
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-Feature Enhancements: Version 0.0.7
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-Feature Enhancements: Version 0.0.6
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-Feature Enhancements: Version 0.0.5
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-Feature Enhancements: Version 0.0.4
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-Feature Enhancements: Version 0.0.3
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
-
-Feature Enhancements: Version 0.0.2
-* Enhancements: None
-* Bug Fix: None
-* Additional changes: None
+* Fixed color selection issue
+* Tested with WordPress 6.7.1
 
 == Upgrade Notice ==
-This is an initial release. Start with version 0.0.1. and share your feedback <a href="https://wordpress.org/support/view/plugin-reviews/testimonial-maker/">here</a>.
 
+= 1.2.5 =
+Fixes translation loading notice that appears in WordPress 6.7 and later versions. Update recommended.
