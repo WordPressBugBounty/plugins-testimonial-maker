@@ -1,0 +1,411 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-02-14 19:10+0530\n"
+"PO-Revision-Date: 2019-02-14 19:10+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: testimonial-premium.php:30 testimonial-premium.php:95
+msgid "Testimonial"
+msgstr ""
+
+#: testimonial-premium.php:72
+msgid "Testimonial Setting"
+msgstr ""
+
+#: testimonial-premium.php:78 testimonial-premium.php:79
+#: testimonial-premium.php:80 testimonial-premium.php:81
+msgid "Testimonial Premium"
+msgstr ""
+
+#: testimonial-premium.php:82 testimonial-premium.php:83
+msgid "Add New Testimonial"
+msgstr ""
+
+#: testimonial-premium.php:84
+msgid "New Testimonial"
+msgstr ""
+
+#: testimonial-premium.php:85
+msgid "Edit Testimonial"
+msgstr ""
+
+#: testimonial-premium.php:86
+msgid "View Testimonial"
+msgstr ""
+
+#: testimonial-premium.php:87
+msgid "All Testimonial"
+msgstr ""
+
+#: testimonial-premium.php:88
+msgid "Search Testimonial"
+msgstr ""
+
+#: testimonial-premium.php:89
+msgid "Parent Testimonial:"
+msgstr ""
+
+#: testimonial-premium.php:90
+msgid "No Testimonial found"
+msgstr ""
+
+#: testimonial-premium.php:91
+msgid "No Testimonial found in Trash"
+msgstr ""
+
+#: testimonial-premium.php:96
+msgid "Description"
+msgstr ""
+
+#: testimonial-premium.php:117 testimonial-premium.php:118
+#: testimonial-premium.php:127
+msgid "Categories"
+msgstr ""
+
+#: testimonial-premium.php:119
+msgid "Search Categories"
+msgstr ""
+
+#: testimonial-premium.php:120
+msgid "All Categories"
+msgstr ""
+
+#: testimonial-premium.php:121
+msgid "Parent Categories"
+msgstr ""
+
+#: testimonial-premium.php:122
+msgid "Parent Categories:"
+msgstr ""
+
+#: testimonial-premium.php:123
+msgid "Edit Categories"
+msgstr ""
+
+#: testimonial-premium.php:124
+msgid "Update Categories"
+msgstr ""
+
+#: testimonial-premium.php:125
+msgid "Add New Categories"
+msgstr ""
+
+#: testimonial-premium.php:126
+msgid "New Category Name"
+msgstr ""
+
+#: testimonial-premium.php:143
+msgid "Add Client Detail"
+msgstr ""
+
+#: testimonial-premium.php:150
+msgid "Client Website URL"
+msgstr ""
+
+#: testimonial-premium.php:153
+msgid "Client Designation"
+msgstr ""
+
+#: testimonial-setting.php:53
+msgid "How to show testimonials on page / post?"
+msgstr ""
+
+#: testimonial-setting.php:57
+msgid ""
+"Copy & Embed shortcode into any Page/ Post / Text to display your on site"
+msgstr ""
+
+#: testimonial-setting.php:61
+msgid "Set Filter In Testimonial Shortcode"
+msgstr ""
+
+#: testimonial-setting.php:65
+msgid ""
+"Here 1, 2, 3 are testimonial categories ids if you want to filter "
+"testimonials then use as above"
+msgstr ""
+
+#: testimonial-setting.php:69
+msgid "Set Template Design In Testimonial Shortcode"
+msgstr ""
+
+#: testimonial-setting.php:73
+msgid "Set template design into output of shortcode as above"
+msgstr ""
+
+#: testimonial-setting.php:81
+msgid "1. Testimonial Template Designs"
+msgstr ""
+
+#: testimonial-setting.php:84
+msgid "Template 1"
+msgstr ""
+
+#: testimonial-setting.php:85
+msgid "Template 2"
+msgstr ""
+
+#: testimonial-setting.php:86
+msgid "Template 3"
+msgstr ""
+
+#: testimonial-setting.php:87
+msgid "Template 4"
+msgstr ""
+
+#: testimonial-setting.php:88
+msgid "Template 5"
+msgstr ""
+
+#: testimonial-setting.php:89
+msgid "Template 6"
+msgstr ""
+
+#: testimonial-setting.php:90
+msgid "Template 7"
+msgstr ""
+
+#: testimonial-setting.php:91
+msgid "Template 8"
+msgstr ""
+
+#: testimonial-setting.php:92
+msgid "Template 9"
+msgstr ""
+
+#: testimonial-setting.php:93
+msgid "Template 10"
+msgstr ""
+
+#: testimonial-setting.php:94
+msgid "Template 11"
+msgstr ""
+
+#: testimonial-setting.php:95
+msgid "Template 12"
+msgstr ""
+
+#: testimonial-setting.php:96
+msgid "Template 13"
+msgstr ""
+
+#: testimonial-setting.php:97
+msgid "Template 14"
+msgstr ""
+
+#: testimonial-setting.php:98
+msgid "Template 15"
+msgstr ""
+
+#: testimonial-setting.php:99
+msgid "Template 16"
+msgstr ""
+
+#: testimonial-setting.php:100
+msgid "Template 17"
+msgstr ""
+
+#: testimonial-setting.php:101
+msgid "Template 18"
+msgstr ""
+
+#: testimonial-setting.php:102
+msgid "Template 19"
+msgstr ""
+
+#: testimonial-setting.php:103
+msgid "Template 20"
+msgstr ""
+
+#: testimonial-setting.php:104
+msgid "Template 21"
+msgstr ""
+
+#: testimonial-setting.php:105
+msgid "Template 22"
+msgstr ""
+
+#: testimonial-setting.php:106
+msgid "Template 23"
+msgstr ""
+
+#: testimonial-setting.php:107
+msgid "Template 24"
+msgstr ""
+
+#: testimonial-setting.php:108
+msgid "Template 25"
+msgstr ""
+
+#: testimonial-setting.php:109
+msgid "Template 26"
+msgstr ""
+
+#: testimonial-setting.php:110
+msgid "Template 27"
+msgstr ""
+
+#: testimonial-setting.php:115
+msgid "2. Transitions Effect"
+msgstr ""
+
+#: testimonial-setting.php:119
+msgid "None"
+msgstr ""
+
+#: testimonial-setting.php:121
+msgid "Fade Up"
+msgstr ""
+
+#: testimonial-setting.php:123
+msgid "Fade"
+msgstr ""
+
+#: testimonial-setting.php:125
+msgid "Slide Down"
+msgstr ""
+
+#: testimonial-setting.php:127
+msgid "Back Slide"
+msgstr ""
+
+#: testimonial-setting.php:129
+msgid "Autoplay"
+msgstr ""
+
+#: testimonial-setting.php:133 testimonial-setting.php:210
+#: testimonial-setting.php:221
+msgid "Yes"
+msgstr ""
+
+#: testimonial-setting.php:135 testimonial-setting.php:212
+#: testimonial-setting.php:223
+msgid "No"
+msgstr ""
+
+#: testimonial-setting.php:136
+msgid "Set autoplay setting for testimonials"
+msgstr ""
+
+#: testimonial-setting.php:138
+msgid "Transitions Slide Speed"
+msgstr ""
+
+#: testimonial-setting.php:144
+msgid "Set slide changing duration ( Default is 1000)"
+msgstr ""
+
+#: testimonial-setting.php:148
+msgid "3. Color"
+msgstr ""
+
+#: testimonial-setting.php:150
+msgid "Customer Name Color"
+msgstr ""
+
+#: testimonial-setting.php:153
+msgid "You can change title color"
+msgstr ""
+
+#: testimonial-setting.php:156
+msgid "Testimonial Text Color"
+msgstr ""
+
+#: testimonial-setting.php:159
+msgid "You can change description color"
+msgstr ""
+
+#: testimonial-setting.php:162
+msgid "Designation Text Color"
+msgstr ""
+
+#: testimonial-setting.php:165
+msgid "You can change designation color"
+msgstr ""
+
+#: testimonial-setting.php:168
+msgid "4. Font Size"
+msgstr ""
+
+#: testimonial-setting.php:169
+msgid "Customer Name Font Size"
+msgstr ""
+
+#: testimonial-setting.php:174
+msgid "Set font changing Size ( Default is 28px)"
+msgstr ""
+
+#: testimonial-setting.php:177
+msgid "Testimonial Text Font Size"
+msgstr ""
+
+#: testimonial-setting.php:182
+msgid "Set font changing Size ( Default is 18px)"
+msgstr ""
+
+#: testimonial-setting.php:185
+msgid "Designation Text Font Size"
+msgstr ""
+
+#: testimonial-setting.php:190
+msgid "Set font changing Size ( Default is 24px)"
+msgstr ""
+
+#: testimonial-setting.php:194
+msgid "5. Pagination Style"
+msgstr ""
+
+#: testimonial-setting.php:200
+msgid "Style 1"
+msgstr ""
+
+#: testimonial-setting.php:202
+msgid "Style 2"
+msgstr ""
+
+#: testimonial-setting.php:203
+msgid "Set a pagination style settings"
+msgstr ""
+
+#: testimonial-setting.php:206
+msgid "A. Style 1 (Bullets)"
+msgstr ""
+
+#: testimonial-setting.php:213
+msgid "Enable or disable style 1 pagination"
+msgstr ""
+
+#: testimonial-setting.php:217
+msgid "A. Style 2 (Arraow / Vertical Lines)"
+msgstr ""
+
+#: testimonial-setting.php:224
+msgid "Enable or disable style 2 pagination"
+msgstr ""
+
+#: testimonial-setting.php:228
+msgid "6. Custom CSS Style"
+msgstr ""
+
+#: testimonial-setting.php:234
+msgid "Type custom CSS code to apply on testimonials"
+msgstr ""
+
+#: testimonial-setting.php:243
+msgid "Please wait..."
+msgstr ""
+
+#: testimonial-setting.php:245
+msgid "Save"
+msgstr ""

@@ -1,0 +1,1629 @@
+/* MUI-inspired CSS for Testimonial Premium Admin */
+:root {
+    --tml-primary: #4f46e5;
+    /* Premium Indigo */
+    --tml-primary-dark: #4338ca;
+    --tml-primary-rgb: 79, 70, 229;
+    --tml-bg: #f1f5f9;
+    /* Slate 100 - Clean contrast background */
+    --tml-surface: #ffffff;
+    --tml-border: #cbd5e1;
+    /* Slate 300 - Crisp borders */
+    --tml-text: #0f172a;
+    /* Slate 900 - High legibility dark slate */
+    --tml-text-secondary: #475569;
+    /* Slate 600 - Secondary slate */
+    --tml-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+    --tml-radius: 12px;
+    --tml-font-family: "Inter", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#tml_shortcode_settings_box {
+    background: var(--tml-bg) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#tml_shortcode_settings_box .inside {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tml-mui-container {
+    display: flex;
+    min-height: 600px;
+    background: var(--tml-bg);
+    font-family: var(--tml-font-family) !important;
+    color: var(--tml-text);
+}
+
+/* Sidebar Styling */
+.tml-mui-sidebar {
+    width: 240px;
+    background: var(--tml-surface);
+    border-right: 1px solid var(--tml-border);
+    padding: 20px 0;
+}
+
+.tml-mui-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    color: var(--tml-text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    letter-spacing: 0.02857em;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+}
+
+.tml-mui-nav-item i {
+    margin-right: 16px;
+    font-size: 1.25rem;
+    width: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+    /* MUI Icon color */
+}
+
+.tml-mui-nav-item:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--tml-text);
+}
+
+.tml-mui-nav-item.active {
+    background: rgba(var(--tml-primary-rgb), 0.08);
+    /* MUI active selection bg */
+    color: var(--tml-primary);
+    border-left-color: var(--tml-primary);
+}
+
+.tml-mui-nav-item.active i {
+    color: var(--tml-primary);
+}
+
+/* Content Area Styling */
+.tml-mui-content {
+    flex: 1;
+    padding: 32px;
+}
+
+.tml-mui-card {
+    background: var(--tml-surface);
+    border-radius: var(--tml-radius);
+    box-shadow: var(--tml-shadow);
+    padding: 24px;
+    margin-bottom: 24px;
+    animation: tmlFadeIn 0.3s ease-out;
+}
+
+@keyframes tmlFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tml-mui-card-title {
+    font-size: 1.25rem;
+    /* MUI h6 */
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--tml-border);
+    color: var(--tml-text);
+}
+
+/* Form Elements */
+.tml-mui-form-group {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tml-mui-label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    /* MUI body2/subtitle2 */
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+    margin-bottom: 8px;
+    color: var(--tml-text);
+}
+
+.tml-mui-description {
+    font-size: 0.75rem;
+    /* MUI caption */
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    color: var(--tml-text-secondary);
+    margin-top: 4px;
+}
+
+.tml-mui-input {
+    padding: 10px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    /* MUI standard input border */
+    border-radius: var(--tml-radius);
+    font-size: 1rem;
+    /* MUI body1 */
+    font-family: var(--tml-font-family);
+    transition: border-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms, box-shadow 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    background: var(--tml-surface);
+    color: var(--tml-text);
+}
+
+select.tml-mui-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%20data-testid%3D%22ArrowDropDownIcon%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 24px;
+    padding-right: 32px;
+}
+
+.tml-mui-input:focus {
+    outline: none;
+    border-color: var(--tml-primary);
+    box-shadow: 0 0 0 1px var(--tml-primary);
+    /* MUI thick focus ring */
+}
+
+/* Modern Material UI Switches */
+.tml-mui-switch {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 44px;
+    height: 22px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.tml-mui-switch input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tml-mui-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cbd5e1;
+    border-radius: 22px;
+    transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tml-mui-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    top: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:checked+.tml-mui-slider {
+    background-color: var(--tml-primary) !important;
+}
+
+input:checked+.tml-mui-slider:before {
+    transform: translateX(22px) !important;
+    background-color: #ffffff !important;
+}
+
+/* Layout Grid for settings */
+.tml-mui-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tml-mui-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* MUI Buttons */
+.tml-mui-btn {
+    padding: 6px 16px;
+    border-radius: var(--tml-radius);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tml-mui-btn-primary {
+    background: var(--tml-primary);
+    color: #fff;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.tml-mui-btn-primary:hover {
+    background: var(--tml-primary-dark);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.tml-mui-btn-outlined {
+    background: transparent;
+    border-color: rgba(var(--tml-primary-rgb), 0.5);
+    color: var(--tml-primary);
+}
+
+.tml-mui-btn-outlined:hover {
+    background: rgba(var(--tml-primary-rgb), 0.04);
+    border-color: var(--tml-primary);
+}
+
+/* Responsive columns input */
+.tml-responsive-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    border-radius: var(--tml-radius);
+    align-items: end;
+}
+
+.tml-responsive-inputs div {
+    flex: 0 0 auto;
+}
+
+.tml-responsive-inputs .tml-mui-input {
+    width: 90px;
+    text-align: center;
+}
+
+.tml-responsive-inputs div label {
+    font-size: 0.75rem;
+    /* MUI overline */
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+    color: var(--tml-text-secondary);
+    display: block;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+/* Tabs for nested views */
+.tml-mui-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--tml-border);
+    margin-bottom: 24px;
+}
+
+.tml-mui-tab {
+    padding: 12px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    color: var(--tml-text-secondary);
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.tml-mui-tab.active {
+    color: var(--tml-primary);
+}
+
+.tml-mui-tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--tml-primary);
+}
+
+/* Toggle Button Group (MUI) */
+.tml-mui-form-group:has(.tml-mui-toggle-group) {
+    margin-bottom: 12px !important;
+}
+
+.tml-mui-toggle-group {
+    display: inline-flex;
+    align-self: flex-start;
+    border-radius: 30px;
+    border: 1px solid var(--tml-border);
+    overflow: hidden;
+    background: #f8fafc;
+    padding: 3px;
+    gap: 4px;
+}
+
+.tml-mui-toggle-label {
+    padding: 6px 18px;
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-right: none;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+}
+
+.tml-mui-toggle-label:last-child {
+    border-right: none;
+}
+
+.tml-mui-toggle-label:hover {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
+.tml-mui-toggle-label.active {
+    background-color: var(--tml-primary) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2) !important;
+}
+
+/* Auto-Convert Legacy Tables to MUI Lists */
+.tml-mui-container .tml-form-table {
+    display: block;
+    width: 100%;
+    background: var(--tml-surface);
+    border-radius: var(--tml-radius);
+    box-shadow: var(--tml-shadow);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.tml-mui-container .tml-form-table tbody {
+    display: block;
+    width: 100%;
+}
+
+.tml-mui-container .tml-form-table tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--tml-border);
+}
+
+.tml-mui-container .tml-form-table tr:last-child {
+    border-bottom: none;
+}
+
+.tml-mui-container .tml-form-table th {
+    display: block;
+    text-align: left;
+    padding: 0;
+    width: auto;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--tml-text);
+    line-height: 1.5;
+}
+
+.tml-mui-container .tml-form-table th small {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--tml-text-secondary) !important;
+    font-weight: 400 !important;
+    margin-top: 4px;
+}
+
+.tml-mui-container .tml-form-table td {
+    display: block;
+    padding: 0;
+    width: auto;
+    text-align: right;
+}
+
+/* Range Slider MUI Style */
+.tml-range-slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 4px;
+    background: rgba(var(--tml-primary-rgb), 0.38);
+    border-radius: 2px;
+    outline: none;
+    margin: 0 10px;
+}
+
+.tml-range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--tml-primary);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.tml-range-slider::-webkit-slider-thumb:hover {
+    box-shadow: 0px 0px 0px 8px rgba(var(--tml-primary-rgb), 0.16);
+}
+
+/* Auto-Convert Legacy Switches to MUI */
+.tml-toggle-label {
+    display: inline-flex !important;
+    align-items: center !important;
+    position: relative !important;
+    width: 44px !important;
+    height: 22px !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.tml-toggle-input {
+    position: absolute !important;
+    opacity: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    z-index: 1 !important;
+    cursor: pointer !important;
+}
+
+.tml-toggle-switch {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #cbd5e1 !important;
+    border-radius: 22px !important;
+    transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.tml-toggle-switch:before {
+    position: absolute !important;
+    content: "" !important;
+    height: 18px !important;
+    width: 18px !important;
+    left: 2px !important;
+    top: 2px !important;
+    background-color: #fff !important;
+    border-radius: 50% !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.tml-toggle-input:checked+.tml-toggle-switch {
+    background-color: var(--tml-primary) !important;
+}
+
+.tml-toggle-input:checked+.tml-toggle-switch:before {
+    transform: translateX(22px) !important;
+    background-color: #ffffff !important;
+}
+
+.tml-toggle-text {
+    display: none !important;
+}
+
+/* Dynamic Icon Radio Selection */
+.tml-mui-icon-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.tml-mui-icon-radio:has(input:checked) {
+    border-color: var(--tml-primary);
+    background: rgba(var(--tml-primary-rgb), 0.04);
+}
+
+.tml-mui-icon-radio:hover:not(:has(input:checked)) {
+    background: #f5f5f5;
+}
+
+.tml-mui-icon-radio .tml-radio-avatar {
+    width: 48px;
+    height: 48px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    margin: 0 auto 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.tml-mui-icon-radio .tml-radio-avatar i {
+    color: #999;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.tml-mui-icon-radio:has(input:checked) .tml-radio-avatar {
+    background: rgba(var(--tml-primary-rgb), 0.08);
+    border-color: rgba(var(--tml-primary-rgb), 0.3);
+}
+
+.tml-mui-icon-radio:has(input:checked) .tml-radio-avatar i {
+    color: var(--tml-primary);
+}
+
+/* Force right-alignment for form cell flex divs */
+.tml-form-table td>div {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+
+/* ==========================================================
+   PREMIUM SaaS & MATERIAL UI DESIGN SYSTEM UPGRADES
+   ========================================================== */
+
+/* SaaS Modern Container & Sidebar Styling */
+.tml-mui-container {
+    display: flex;
+    min-height: 600px;
+    background: var(--tml-surface) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    overflow: visible !important;
+}
+
+.tml-mui-sidebar {
+    width: 240px !important;
+    background: #fbfcfd !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+    padding: 24px 0 !important;
+    flex-shrink: 0 !important;
+    border-top-left-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+}
+
+/* Elegant Sidebar Nav Items with Indent Hover & Soft Gradients */
+.tml-mui-nav-item {
+    display: flex !important;
+    align-items: center !important;
+    padding: 14px 24px !important;
+    color: var(--tml-text-secondary) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0.015em !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border-left: 4px solid transparent !important;
+    cursor: pointer !important;
+}
+
+.tml-mui-nav-item i {
+    margin-right: 16px !important;
+    font-size: 1.25rem !important;
+    width: 24px !important;
+    text-align: center !important;
+    color: rgba(0, 0, 0, 0.38) !important;
+    /* Elegant subtle icons */
+    transition: color 0.3s ease !important;
+}
+
+.tml-mui-nav-item:hover {
+    background: rgba(var(--tml-primary-rgb), 0.03) !important;
+    color: var(--tml-primary) !important;
+    padding-left: 28px !important;
+    /* Smooth horizontal indent on hover! */
+}
+
+.tml-mui-nav-item:hover i {
+    color: var(--tml-primary) !important;
+}
+
+.tml-mui-nav-item.active {
+    background: linear-gradient(90deg, rgba(var(--tml-primary-rgb), 0.08) 0%, rgba(var(--tml-primary-rgb), 0.01) 100%) !important;
+    color: var(--tml-primary) !important;
+    border-left: 4px solid var(--tml-primary) !important;
+    font-weight: 600 !important;
+    padding-left: 28px !important;
+    /* Persistent elegant active indent! */
+}
+
+.tml-mui-nav-item.active i {
+    color: var(--tml-primary) !important;
+}
+
+/* Modern Card Layout & Shadows */
+.tml-mui-content {
+    background: var(--tml-bg) !important;
+    padding: 32px !important;
+}
+
+.tml-mui-card {
+    background: var(--tml-surface) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04) !important;
+    padding: 28px !important;
+    margin-bottom: 24px !important;
+    border: 1px solid var(--tml-border) !important;
+    animation: tmlFadeSlide 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease !important;
+}
+
+.tml-mui-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    border-color: var(--tml-primary) !important;
+}
+
+.tml-mui-card-title {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0.01em !important;
+    margin-bottom: 24px !important;
+    padding-bottom: 16px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    color: var(--tml-text) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+/* Stunning Preset Cards Hover Zoom & Active Glow */
+.tml-preset-card {
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 12px !important;
+    padding: 20px 15px !important;
+    min-width: 110px !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.tml-preset-card:hover {
+    border-color: var(--tml-primary, var(--tml-primary)) !important;
+    box-shadow: 0 8px 16px rgba(var(--tml-primary-rgb), 0.1) !important;
+    transform: translateY(-4px) !important;
+}
+
+.tml-preset-card.selected {
+    border-color: var(--tml-primary, var(--tml-primary)) !important;
+    background: rgba(var(--tml-primary-rgb), 0.04) !important;
+    box-shadow: 0 4px 12px rgba(var(--tml-primary-rgb), 0.15) !important;
+}
+
+.tml-preset-card svg {
+    width: 44px !important;
+    height: 34px !important;
+    color: rgba(0, 0, 0, 0.38) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.tml-preset-card.selected svg {
+    color: var(--tml-primary, var(--tml-primary)) !important;
+    transform: scale(1.1) !important;
+}
+
+.tml-preset-card span {
+    font-weight: 600 !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+    font-size: 13px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.tml-preset-card.selected span {
+    color: var(--tml-primary, var(--tml-primary)) !important;
+}
+
+/* Beautiful Smooth Keyframe Animations */
+@keyframes tmlFadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Premium Responsive Column Customizer Grid */
+.tml-responsive-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 16px !important;
+    margin-top: 10px !important;
+}
+
+.tml-responsive-column-item {
+    background: #fafbfc !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-radius: 12px !important;
+    padding: 16px 12px !important;
+    text-align: center !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.tml-responsive-column-item:hover {
+    background: #ffffff !important;
+    border-color: var(--tml-primary, var(--tml-primary)) !important;
+    box-shadow: 0 4px 12px rgba(var(--tml-primary-rgb), 0.08) !important;
+    transform: translateY(-2px) !important;
+}
+
+.tml-device-icon {
+    font-size: 1.5rem !important;
+    color: rgba(0, 0, 0, 0.45) !important;
+    margin-bottom: 8px !important;
+    transition: color 0.3s ease !important;
+}
+
+.tml-responsive-column-item:hover .tml-device-icon {
+    color: var(--tml-primary, var(--tml-primary)) !important;
+}
+
+.tml-responsive-column-item label {
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: var(--tml-text-secondary) !important;
+    margin-bottom: 12px !important;
+    display: block !important;
+}
+
+.tml-responsive-column-item .tml-mui-input {
+    width: 70px !important;
+    height: 36px !important;
+    padding: 4px 8px !important;
+    text-align: center !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    background: #ffffff !important;
+}
+
+/* ==========================================================
+   NESTED SUB-SIDEBAR & CAPSULE TAB SPACING UPGRADES
+   ========================================================== */
+
+/* Distinctly style nested containers to separate them from the outer layout */
+.tml-mui-content .tml-mui-container {
+    width: 100% !important;
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Lighter, narrower nested sidebar for visual hierarchy */
+.tml-mui-content .tml-mui-container .tml-mui-sidebar {
+    width: 200px !important;
+    background: #f8f9fa !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+    padding: 20px 0 !important;
+    flex-shrink: 0 !important;
+    border-top-left-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+}
+
+/* Distinct style for nested content area to ensure it occupies the remaining space */
+.tml-mui-content .tml-mui-container .tml-mui-content {
+    flex: 1 !important;
+    background: #ffffff !important;
+    padding: 24px !important;
+    box-sizing: border-box !important;
+}
+
+/* Elegant capsule button style for sub-tabs to add maximum breathing room */
+.tml-mui-sidebar .tml-s-tab,
+.tml-mui-sidebar .tml-v-tab {
+    margin: 6px 12px !important;
+    /* Elegant spacing around button */
+    padding: 10px 16px !important;
+    /* Perfectly proportioned padding */
+    border-radius: 8px !important;
+    /* Beautiful rounded corners */
+    border-left: none !important;
+    /* Clean layout without left lines */
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    font-size: 0.825rem !important;
+    /* Hierarchical text size */
+    font-weight: 500 !important;
+    color: var(--tml-text-secondary) !important;
+}
+
+/* Sub-Tab Hover State */
+.tml-mui-sidebar .tml-s-tab:hover,
+.tml-mui-sidebar .tml-v-tab:hover {
+    background: rgba(var(--tml-primary-rgb), 0.04) !important;
+    color: var(--tml-primary, var(--tml-primary)) !important;
+    padding-left: 20px !important;
+    /* Gentle horizontal hover indent */
+}
+
+/* Sub-Tab Active Highlight (Locks in capsule glow) */
+.tml-mui-sidebar .tml-s-tab.active,
+.tml-mui-sidebar .tml-v-tab.active {
+    background: rgba(var(--tml-primary-rgb), 0.08) !important;
+    color: var(--tml-primary, var(--tml-primary)) !important;
+    font-weight: 600 !important;
+    padding-left: 20px !important;
+    /* Keep indent */
+}
+
+.tml-mui-sidebar .tml-s-tab.active i,
+.tml-mui-sidebar .tml-v-tab.active i {
+    color: var(--tml-primary, var(--tml-primary)) !important;
+}
+
+/* ==========================================================
+   COLOR PICKER SPACING & ALIGNMENT UPGRADES
+   ========================================================== */
+
+/* Outer color pickers block container */
+.tml-color-pickers-block {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 16px 24px !important;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+}
+
+/* Individual Color Picker Item Container */
+.tml-color-picker-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+/* Modern, Clean Uppercase Label above the color picker */
+.tml-color-picker-label {
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: var(--tml-text-secondary, #666) !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+}
+
+/* WP Color Picker Container Overrides */
+.tml-color-picker-item .wp-picker-container {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    margin: 0 !important;
+}
+
+/* Add clear visual margins to color result buttons */
+.tml-color-picker-item .wp-color-result {
+    margin: 0 !important;
+    height: 32px !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Style the default button */
+.tml-color-picker-item .wp-picker-default {
+    height: 32px !important;
+    line-height: 30px !important;
+    padding: 0 10px !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ==========================================================
+   PAGINATION CARD SELECTORS & ACTIVE STATUS STYLES
+   ========================================================== */
+
+/* Modern Pagination Type Card Selectors */
+.tml-pagi-type-card {
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 20px 16px !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.tml-pagi-type-card:hover {
+    border-color: var(--tml-primary, var(--tml-primary)) !important;
+    box-shadow: 0 8px 16px rgba(var(--tml-primary-rgb), 0.08) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Highlight Selected Card */
+.tml-pagi-type-card:has(input:checked) {
+    border-color: var(--tml-primary, var(--tml-primary)) !important;
+    background: rgba(var(--tml-primary-rgb), 0.04) !important;
+    box-shadow: 0 4px 12px rgba(var(--tml-primary-rgb), 0.12) !important;
+}
+
+.tml-pagi-type-card:has(input:checked) i {
+    transform: scale(1.15) !important;
+    color: var(--tml-primary, var(--tml-primary)) !important;
+}
+
+.tml-pagi-type-card:has(input:checked) span {
+    color: var(--tml-primary, var(--tml-primary)) !important;
+    font-weight: 600 !important;
+}
+
+/* Toggle Group Dynamic Highlight (MUI) */
+.tml-mui-toggle-label:has(input:checked) {
+    background-color: var(--tml-primary) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2) !important;
+}
+
+/* ==========================================================
+   STICKY LIVE PREVIEW BUTTON & MODAL STYLES
+   ========================================================== */
+
+/* Sticky Action Button */
+.tml-sticky-preview-btn {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    background: var(--tml-primary, var(--tml-primary)) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 14px 28px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    box-shadow: 0 10px 25px rgba(var(--tml-primary-rgb), 0.35) !important;
+    z-index: 99999 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-transform: uppercase !important;
+}
+
+.tml-sticky-preview-btn:hover {
+    background: var(--tml-primary-dark) !important;
+    box-shadow: 0 14px 30px rgba(var(--tml-primary-rgb), 0.45) !important;
+    transform: translateY(-4px) !important;
+}
+
+.tml-sticky-preview-btn:active {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 15px rgba(var(--tml-primary-rgb), 0.3) !important;
+}
+
+.tml-sticky-preview-btn i {
+    font-size: 1.1rem !important;
+    transition: transform 0.3s ease !important;
+}
+
+.tml-sticky-preview-btn:hover i {
+    transform: scale(1.2) !important;
+}
+
+/* Sticky Reset Button */
+.tml-sticky-reset-btn {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 220px !important;
+    background: #ffffff !important;
+    color: #e53935 !important;
+    border: 2px solid #e53935 !important;
+    border-radius: 50px !important;
+    padding: 12px 22px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+    box-shadow: 0 6px 18px rgba(229, 57, 53, 0.15) !important;
+    z-index: 99999 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-transform: uppercase !important;
+}
+
+.tml-sticky-reset-btn:hover {
+    background: #e53935 !important;
+    color: #ffffff !important;
+    box-shadow: 0 10px 25px rgba(229, 57, 53, 0.35) !important;
+    transform: translateY(-3px) !important;
+}
+
+.tml-sticky-reset-btn:active {
+    transform: translateY(-1px) !important;
+}
+
+/* Reset Confirmation Dialog */
+.tml-reset-confirm-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.45) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    z-index: 9999999 !important;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.tml-reset-confirm-overlay.active {
+    display: flex !important;
+}
+
+.tml-reset-confirm-box {
+    background: #ffffff !important;
+    border-radius: 20px !important;
+    padding: 40px 36px !important;
+    max-width: 440px !important;
+    width: 90% !important;
+    text-align: center !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2) !important;
+    transform: scale(0.88) !important;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.tml-reset-confirm-overlay.active .tml-reset-confirm-box {
+    transform: scale(1) !important;
+}
+
+.tml-reset-confirm-icon {
+    width: 64px !important;
+    height: 64px !important;
+    border-radius: 50% !important;
+    background: #fff3f3 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 20px !important;
+}
+
+.tml-reset-confirm-icon i {
+    font-size: 1.8rem !important;
+    color: #e53935 !important;
+}
+
+.tml-reset-confirm-box h3 {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    margin: 0 0 10px !important;
+}
+
+.tml-reset-confirm-box p {
+    font-size: 0.9rem !important;
+    color: #64748b !important;
+    margin: 0 0 28px !important;
+    line-height: 1.6 !important;
+}
+
+.tml-reset-confirm-actions {
+    display: flex !important;
+    gap: 12px !important;
+    justify-content: center !important;
+}
+
+.tml-reset-cancel-btn {
+    padding: 10px 24px !important;
+    border-radius: 50px !important;
+    border: 2px solid #e2e8f0 !important;
+    background: #ffffff !important;
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+.tml-reset-cancel-btn:hover {
+    border-color: #cbd5e1 !important;
+    background: #f8fafc !important;
+}
+
+.tml-reset-confirm-btn {
+    padding: 10px 24px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    background: #e53935 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.tml-reset-confirm-btn:hover {
+    background: #c62828 !important;
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.35) !important;
+}
+
+
+.tml-preview-modal {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    z-index: 999999 !important;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 0;
+    transition: opacity 0.3s ease !important;
+}
+
+.tml-preview-modal.active {
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+/* Modal Content Card */
+.tml-preview-modal-content {
+    background: #ffffff !important;
+    width: 90% !important;
+    max-width: 1300px !important;
+    height: 85vh !important;
+    border-radius: 20px !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    transform: scale(0.9) !important;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.tml-preview-modal.active .tml-preview-modal-content {
+    transform: scale(1) !important;
+}
+
+/* Modal Header */
+.tml-preview-modal-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 18px 28px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    background: #fafafa !important;
+}
+
+.tml-preview-modal-header h3 {
+    margin: 0 !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.tml-preview-modal-header h3 i {
+    animation: tml-eye-pulse 2s infinite ease-in-out;
+}
+
+@keyframes tml-eye-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(0.92);
+    }
+}
+
+.tml-preview-close {
+    background: transparent !important;
+    border: none !important;
+    font-size: 1.25rem !important;
+    color: #64748b !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.tml-preview-close:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: #1e293b !important;
+    transform: rotate(90deg) !important;
+}
+
+.tml-preview-modal-body {
+    flex: 1 !important;
+    padding: 30px 65px !important;
+    /* Increased horizontal padding to 65px so absolute nav buttons (up to -50px) don't get clipped */
+    overflow-y: auto !important;
+    background: #ffffff !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#tml-preview-render-target {
+    margin: auto 0 !important;
+    width: 100% !important;
+}
+
+/* Loader Overlay inside Modal */
+.tml-preview-loader {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(248, 250, 252, 0.85) !important;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 10 !important;
+    gap: 16px !important;
+    transition: opacity 0.3s ease;
+}
+
+.tml-preview-loader.tml-loader-hidden {
+    display: none !important;
+}
+
+.tml-preview-spinner {
+    width: 48px !important;
+    height: 48px !important;
+    border: 4px solid rgba(var(--tml-primary-rgb), 0.1) !important;
+    border-top: 4px solid var(--tml-primary, var(--tml-primary)) !important;
+    border-radius: 50% !important;
+    animation: tml-spin 0.8s linear infinite !important;
+}
+
+@keyframes tml-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tml-preview-loader span {
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+    letter-spacing: 0.02em !important;
+}
+
+/* ============================================================
+   ITEM SPACING — HOVER TOOLTIP STYLES
+   ============================================================ */
+.tml-spacing-tooltip-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.tml-spacing-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    width: 185px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Arrow pointing down */
+.tml-spacing-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-top-color: #1e293b;
+}
+
+/* Right-aligned variant (for vertical gap — avoid right-edge clipping) */
+.tml-spacing-tooltip-right {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%) translateY(6px);
+}
+
+.tml-spacing-tooltip-right::after {
+    left: auto;
+    right: 20%;
+    transform: none;
+}
+
+.tml-spacing-tooltip-wrap:hover .tml-spacing-tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.tml-spacing-tooltip-wrap:hover .tml-spacing-tooltip-right {
+    transform: translateX(50%) translateY(0);
+}
+
+.tml-spacing-tooltip svg {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==========================================================
+   MATERIAL UI COLOR PICKER OVERRIDES & RECONSTRUCTION
+   ========================================================== */
+
+/* Main wrapper container for the WP Color Picker */
+.tml-mui-container .wp-picker-container {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    vertical-align: middle !important;
+}
+
+.tml-mui-container .wp-picker-container.wp-picker-active {
+    z-index: 99999 !important;
+}
+
+/* Hide hex input wrapper by default to keep the layout extremely clean and compact */
+.tml-mui-container .wp-picker-input-wrap {
+    display: none !important;
+}
+
+/* Show input wrapper only when the specific color picker is active (opened) */
+.tml-mui-container .wp-picker-container.wp-picker-active .wp-picker-input-wrap {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+/* Sleek 36x36px Live Color Swatch (replaces bulky 'Select Color' button) */
+.tml-mui-container .wp-color-result {
+    margin: 0 !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    background-image: none !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms ease !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    padding: 0 !important;
+}
+
+.tml-mui-container .wp-color-result:hover {
+    border-color: rgba(0, 0, 0, 0.87) !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.tml-mui-container .wp-color-result:active {
+    transform: scale(0.95) !important;
+}
+
+/* Completely hide the text span inside the swatch button */
+.tml-mui-container .wp-color-result-text {
+    display: none !important;
+}
+
+/* MUI Style Outlined Input hex box */
+.tml-mui-container .wp-picker-input-wrap input.wp-color-picker {
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    border: 1px solid rgba(0, 0, 0, 0.23) !important;
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    height: 36px !important;
+    box-sizing: border-box !important;
+    width: 90px !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    background: #ffffff !important;
+    font-family: "Roboto", "Inter", "Segoe UI", sans-serif !important;
+    transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+}
+
+.tml-mui-container .wp-picker-input-wrap input.wp-color-picker:focus {
+    border-color: var(--tml-primary) !important;
+    /* MUI Primary Blue */
+    box-shadow: 0 0 0 1px var(--tml-primary) !important;
+    outline: none !important;
+}
+
+/* MUI Outlined Primary Button variant for the Clear option */
+.tml-mui-container .wp-picker-clear {
+    height: 36px !important;
+    line-height: 34px !important;
+    padding: 0 16px !important;
+    border-radius: 4px !important;
+    font-size: 0.8125rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.02857em !important;
+    border: 1px solid rgba(var(--tml-primary-rgb), 0.5) !important;
+    /* Outlined Primary Blue */
+    background: transparent !important;
+    color: var(--tml-primary) !important;
+    font-family: "Roboto", "Inter", "Segoe UI", sans-serif !important;
+    cursor: pointer !important;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+}
+
+.tml-mui-container .wp-picker-clear:hover {
+    background: rgba(var(--tml-primary-rgb), 0.04) !important;
+    border-color: var(--tml-primary) !important;
+    color: var(--tml-primary) !important;
+}
+
+/* Hide Default button when closed, style it elegantly when open */
+.tml-mui-container .wp-picker-container:not(.wp-picker-active) .wp-picker-default {
+    display: none !important;
+}
+
+.tml-mui-container .wp-picker-container.wp-picker-active .wp-picker-default {
+    display: inline-block !important;
+    height: 36px !important;
+    line-height: 34px !important;
+    padding: 0 16px !important;
+    border-radius: 4px !important;
+    border: 1px solid rgba(0, 0, 0, 0.23) !important;
+    font-size: 0.8125rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.02857em !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+    background: #ffffff !important;
+    font-family: "Roboto", "Inter", "Segoe UI", sans-serif !important;
+    cursor: pointer !important;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+}
+
+.tml-mui-container .wp-picker-default:hover {
+    background: rgba(0, 0, 0, 0.04) !important;
+    border-color: rgba(0, 0, 0, 0.87) !important;
+}
+
+/* MUI Standard Popover Menu Card with Elevation 8 shadow */
+.tml-mui-container .wp-picker-holder {
+    position: absolute !important;
+    z-index: 999999 !important;
+    left: 0 !important;
+    right: auto !important;
+    top: 100% !important;
+    margin-top: 6px !important;
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15) !important;
+    padding: 12px !important;
+    box-sizing: content-box !important;
+    display: none;
+}
+
+/* Ensure active picker displays its holder */
+.tml-mui-container .wp-picker-container.wp-picker-active .wp-picker-holder {
+    display: block !important;
+}
+
+/* Drag & Drop Field Layout Styling */
+.tml-layout-field-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    background: #f8fafc;
+    border: 1px solid var(--tml-border);
+    border-radius: 8px;
+    cursor: grab;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.tml-layout-field-item:hover {
+    border-color: #cbd5e1 !important;
+    background: #f1f5f9 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.tml-layout-field-item.ui-sortable-helper {
+    cursor: grabbing !important;
+    background: #ffffff !important;
+    border-color: #4f46e5 !important;
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.1), 0 4px 6px -4px rgba(79, 70, 229, 0.1) !important;
+}
+
+.tml-layout-field-item-placeholder {
+    border: 2px dashed #cbd5e1 !important;
+    border-radius: 8px !important;
+    background: rgba(248, 250, 252, 0.5) !important;
+    height: 68px !important;
+}

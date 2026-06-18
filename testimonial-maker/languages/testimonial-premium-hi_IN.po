@@ -1,0 +1,604 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-02-14 19:10+0530\n"
+"PO-Revision-Date: 2019-02-14 19:10+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: testimonial-premium.php:30 testimonial-premium.php:95
+msgid "Testimonial"
+msgstr "प्रशंसापत्र"
+
+#: testimonial-premium.php:72
+msgid "Testimonial Setting"
+msgstr "प्रशंसापत्र सेटिंग"
+
+#: testimonial-premium.php:78 testimonial-premium.php:79 testimonial-premium.php:80
+#: testimonial-premium.php:81
+msgid "Testimonial Premium"
+msgstr "प्रशंसापत्र प्रीमियम"
+
+#: testimonial-premium.php:82 testimonial-premium.php:83
+msgid "Add New Testimonial"
+msgstr "नए प्रशंसापत्र जोड़ें"
+
+#: testimonial-premium.php:84
+msgid "New Testimonial"
+msgstr "नई प्रशंसापत्र"
+
+#: testimonial-premium.php:85
+msgid "Edit Testimonial"
+msgstr "प्रशंसापत्र संपादित करें"
+
+#: testimonial-premium.php:86
+msgid "View Testimonial"
+msgstr "देखें प्रशंसापत्र"
+
+#: testimonial-premium.php:87
+msgid "All Testimonial"
+msgstr "सभी प्रशंसापत्र"
+
+#: testimonial-premium.php:88
+msgid "Search Testimonial"
+msgstr "खोज प्रशंसापत्र"
+
+#: testimonial-premium.php:89
+msgid "Parent Testimonial:"
+msgstr "अभिभावक प्रशंसापत्र:"
+
+#: testimonial-premium.php:90
+msgid "No Testimonial found"
+msgstr "कोई प्रशंसापत्र नहीं मिला"
+
+#: testimonial-premium.php:91
+msgid "No Testimonial found in Trash"
+msgstr "कोई प्रशंसापत्र कचरा में नहीं पाया"
+
+#: testimonial-premium.php:96
+msgid "Description"
+msgstr "विवरण"
+
+#: testimonial-premium.php:117 testimonial-premium.php:118 testimonial-premium.php:127
+msgid "Categories"
+msgstr "श्रेणियाँ"
+
+#: testimonial-premium.php:119
+msgid "Search Categories"
+msgstr "श्रेणियाँ खोजें"
+
+#: testimonial-premium.php:120
+msgid "All Categories"
+msgstr "सभी श्रेणियाँ"
+
+#: testimonial-premium.php:121
+msgid "Parent Categories"
+msgstr "पैरेंट श्रेणियां"
+
+#: testimonial-premium.php:122
+msgid "Parent Categories:"
+msgstr "पैरेंट श्रेणियां:"
+
+#: testimonial-premium.php:123
+msgid "Edit Categories"
+msgstr "श्रेणियाँ संपादित करें"
+
+#: testimonial-premium.php:124
+msgid "Update Categories"
+msgstr "श्रेणियाँ अद्यतन करें"
+
+#: testimonial-premium.php:125
+msgid "Add New Categories"
+msgstr "नई श्रेणियां जोड़ें"
+
+#: testimonial-premium.php:126
+msgid "New Category Name"
+msgstr "नया श्रेणी का नाम"
+
+#: testimonial-premium.php:143
+msgid "Add Client Detail"
+msgstr "क्लाइंट विवरण जोड़ें"
+
+#: testimonial-premium.php:150
+msgid "Client Website URL"
+msgstr "क्लाइंट वेबसाइट URL"
+
+#: testimonial-premium.php:153
+msgid "Client Designation"
+msgstr "ग्राहक पदनाम"
+
+#: testimonial-setting.php:53
+msgid "How to show testimonials on page / post?"
+msgstr "पेज / पोस्ट पर प्रशंसापत्र कैसे दिखाएं?"
+
+#: testimonial-setting.php:57
+msgid "Copy & Embed shortcode into any Page/ Post / Text to display your on site"
+msgstr "अपनी साइट पर प्रदर्शित करने के लिए किसी भी पृष्ठ/पोस्ट/पाठ में प्रतिलिपि & एंबेड शॉर्टकोड"
+
+#: testimonial-setting.php:61
+msgid "Set Filter In Testimonial Shortcode"
+msgstr "प्रशंसापत्र संक्षिप्तकोड में फ़िल्टर सेट करें"
+
+#: testimonial-setting.php:65
+msgid ""
+"Here 1, 2, 3 are testimonial categories ids if you want to filter testimonials then use as "
+"above"
+msgstr ""
+"यहां 1, 2, 3 प्रशंसापत्र श्रेणियां आईडी हैं यदि आप प्रशंसापत्र फ़िल्टर करना चाहते हैं तो ऊपर के रूप में उपयोग करें"
+
+#: testimonial-setting.php:69
+msgid "Set Template Design In Testimonial Shortcode"
+msgstr "प्रशंसापत्र शॉर्टकोड में टेंपलेट डिज़ाइन सेट करें"
+
+#: testimonial-setting.php:73
+msgid "Set template design into output of shortcode as above"
+msgstr "ऊपर के रूप में शोर्ट के आउटपुट में टेम्पलेट डिज़ाइन सेट करें"
+
+#: testimonial-setting.php:81
+msgid "1. Testimonial Template Designs"
+msgstr "1. प्रशंसापत्र टेम्पलेट डिजाइन"
+
+#: testimonial-setting.php:84
+msgid "Template 1"
+msgstr "खाका 1"
+
+#: testimonial-setting.php:85
+msgid "Template 2"
+msgstr "खाका 2"
+
+#: testimonial-setting.php:86
+msgid "Template 3"
+msgstr "खाका 3"
+
+#: testimonial-setting.php:87
+msgid "Template 4"
+msgstr "खाका 4"
+
+#: testimonial-setting.php:88
+msgid "Template 5"
+msgstr "खाका 5"
+
+#: testimonial-setting.php:89
+msgid "Template 6"
+msgstr "खाका 6"
+
+#: testimonial-setting.php:90
+msgid "Template 7"
+msgstr "खाका 7"
+
+#: testimonial-setting.php:91
+msgid "Template 8"
+msgstr "खाका 8"
+
+#: testimonial-setting.php:92
+msgid "Template 9"
+msgstr "खाका 9"
+
+#: testimonial-setting.php:93
+msgid "Template 10"
+msgstr "खाका 10"
+
+#: testimonial-setting.php:94
+msgid "Template 11"
+msgstr "खाका 11"
+
+#: testimonial-setting.php:95
+msgid "Template 12"
+msgstr "खाका 12"
+
+#: testimonial-setting.php:96
+msgid "Template 13"
+msgstr "खाका 13"
+
+#: testimonial-setting.php:97
+msgid "Template 14"
+msgstr "खाका 14"
+
+#: testimonial-setting.php:98
+msgid "Template 15"
+msgstr "खाका 15"
+
+#: testimonial-setting.php:99
+msgid "Template 16"
+msgstr "खाका 16"
+
+#: testimonial-setting.php:100
+msgid "Template 17"
+msgstr "खाका 17"
+
+#: testimonial-setting.php:101
+msgid "Template 18"
+msgstr "खाका 18"
+
+#: testimonial-setting.php:102
+msgid "Template 19"
+msgstr "खाका 19"
+
+#: testimonial-setting.php:103
+msgid "Template 20"
+msgstr "खाका 20"
+
+#: testimonial-setting.php:104
+msgid "Template 21"
+msgstr "खाका 21"
+
+#: testimonial-setting.php:105
+msgid "Template 22"
+msgstr "खाका 22"
+
+#: testimonial-setting.php:106
+msgid "Template 23"
+msgstr "खाका 23"
+
+#: testimonial-setting.php:107
+msgid "Template 24"
+msgstr "खाका 24"
+
+#: testimonial-setting.php:108
+msgid "Template 25"
+msgstr "खाका 25"
+
+#: testimonial-setting.php:109
+msgid "Template 26"
+msgstr "खाका 26"
+
+#: testimonial-setting.php:110
+msgid "Template 27"
+msgstr "खाका 27"
+
+#: testimonial-setting.php:115
+msgid "2. Transitions Effect"
+msgstr "2. संक्रमण प्रभाव"
+
+#: testimonial-setting.php:119
+msgid "None"
+msgstr "कोई नहीं"
+
+#: testimonial-setting.php:121
+msgid "Fade Up"
+msgstr "ऊपर फीका करना"
+
+#: testimonial-setting.php:123
+msgid "Fade"
+msgstr "फीका"
+
+#: testimonial-setting.php:125
+msgid "Slide Down"
+msgstr "नीचे स्लाइड करें"
+
+#: testimonial-setting.php:127
+msgid "Back Slide"
+msgstr "पीछे स्लाइड करें"
+
+#: testimonial-setting.php:129
+msgid "Autoplay"
+msgstr "स्वत: प्ले"
+
+#: testimonial-setting.php:133 testimonial-setting.php:210 testimonial-setting.php:221
+msgid "Yes"
+msgstr "हाँ"
+
+#: testimonial-setting.php:135 testimonial-setting.php:212 testimonial-setting.php:223
+msgid "No"
+msgstr "नहीं"
+
+#: testimonial-setting.php:136
+msgid "Set autoplay setting for testimonials"
+msgstr "प्रशंसापत्र के लिए ऑटोप्ले सेटिंग सेट करें"
+
+#: testimonial-setting.php:138
+msgid "Transitions Slide Speed"
+msgstr "संक्रमण स्लाइड की गति"
+
+#: testimonial-setting.php:144
+msgid "Set slide changing duration ( Default is 1000)"
+msgstr "स्लाइड बदलने की अवधि निर्धारित करें (डिफ़ॉल्ट 1000 है)"
+
+#: testimonial-setting.php:148
+msgid "3. Color"
+msgstr "3. रंग"
+
+#: testimonial-setting.php:150
+msgid "Customer Name Color"
+msgstr "ग्राहक का नाम रंग"
+
+#: testimonial-setting.php:153
+msgid "You can change title color"
+msgstr "आप शीर्षक रंग बदल सकते हैं"
+
+#: testimonial-setting.php:156
+msgid "Testimonial Text Color"
+msgstr "प्रशंसापत्र पाठ रंग"
+
+#: testimonial-setting.php:159
+msgid "You can change description color"
+msgstr "आप वर्णन रंग बदल सकते हैं"
+
+#: testimonial-setting.php:162
+msgid "Designation Text Color"
+msgstr "पदनाम पाठ का रंग"
+
+#: testimonial-setting.php:165
+msgid "You can change designation color"
+msgstr "आप पदनाम रंग बदल सकते हैं"
+
+#: testimonial-setting.php:168
+msgid "4. Font Size"
+msgstr "4. फ़ॉन्ट आकार"
+
+#: testimonial-setting.php:169
+msgid "Customer Name Font Size"
+msgstr "ग्राहक का नाम फ़ॉन्ट आकार"
+
+#: testimonial-setting.php:174
+msgid "Set font changing Size ( Default is 28px)"
+msgstr "सेट फ़ॉंट परिवर्तित आकार (डिफ़ॉल्ट 28px है)"
+
+#: testimonial-setting.php:177
+msgid "Testimonial Text Font Size"
+msgstr "प्रशंसापत्र पाठ फ़ॉन्ट आकार"
+
+#: testimonial-setting.php:182
+msgid "Set font changing Size ( Default is 18px)"
+msgstr "सेट फ़ॉंट परिवर्तित आकार (डिफ़ॉल्ट 18px है)"
+
+#: testimonial-setting.php:185
+msgid "Designation Text Font Size"
+msgstr "पदनाम पाठ का आकार"
+
+#: testimonial-setting.php:190
+msgid "Set font changing Size ( Default is 24px)"
+msgstr "सेट फ़ॉंट परिवर्तित आकार (डिफ़ॉल्ट 24px है)"
+
+#: testimonial-setting.php:194
+msgid "5. Pagination Style"
+msgstr "5. पृष्ठ पर अंक लगाना शैली"
+
+#: testimonial-setting.php:200
+msgid "Style 1"
+msgstr "शैली 1"
+
+#: testimonial-setting.php:202
+msgid "Style 2"
+msgstr "शैली 2"
+
+#: testimonial-setting.php:203
+msgid "Set a pagination style settings"
+msgstr "एक पृष्ठांकन शैली सेटिंग सेट करें"
+
+#: testimonial-setting.php:206
+msgid "A. Style 1 (Bullets)"
+msgstr "A. स्टाइल 1 (बुलेट)"
+
+#: testimonial-setting.php:213
+msgid "Enable or disable style 1 pagination"
+msgstr "स्टाइल 1 पेजेशन को सक्षम या अक्षम करें"
+
+#: testimonial-setting.php:217
+msgid "A. Style 2 (Arraow / Vertical Lines)"
+msgstr "A. स्टाइल 2 (अर्रॉ / वर्टिकल लाइन्स)"
+
+#: testimonial-setting.php:224
+msgid "Enable or disable style 2 pagination"
+msgstr "स्टाइल 2 पेजेशन को सक्षम या अक्षम करें"
+
+#: testimonial-setting.php:228
+msgid "6. Custom CSS Style"
+msgstr "कस्टम सीएसएस"
+
+#: testimonial-setting.php:234
+msgid "Type custom CSS code to apply on testimonials"
+msgstr "प्रशंसापत्र पर लागू करने के लिए कस्टम सीएसएस कोड टाइप करें"
+
+#: testimonial-setting.php:243
+msgid "Please wait..."
+msgstr "कृपया प्रतीक्षा करें..."
+
+#: testimonial-setting.php:245
+msgid "Save"
+msgstr "बचाओ"
+
+#, fuzzy
+#~| msgid "2. Columns Layout Settings"
+#~ msgid "3. color Settings"
+#~ msgstr "2. कॉलम लेआउट सेटिंग्स"
+
+#~ msgid "1. Gallery Thumbnail Size"
+#~ msgstr "1. गैलरी थंबनेल आकार"
+
+#~ msgid "Select gallery thumnails size to display into gallery"
+#~ msgstr "गैलरी में प्रदर्शित करने के लिए गैलरी थम्बनेल आकार का चयन करें"
+
+#~ msgid "Go To Top"
+#~ msgstr "ऊपर जाएँ"
+
+#~ msgid "A. Columns On Large Desktops"
+#~ msgstr "A. बड़े डेस्कटॉप पर कॉलम"
+
+#~ msgid "1 Column"
+#~ msgstr "1 कॉलम"
+
+#~ msgid "2 Column"
+#~ msgstr "2 कॉलम"
+
+#~ msgid "4 Column"
+#~ msgstr "4 कॉलम"
+
+#~ msgid "6 Column"
+#~ msgstr "6 कॉलम"
+
+#~ msgid "12 Column"
+#~ msgstr "12 कॉलम"
+
+#~ msgid "Select gallery column layout for large desktop devices."
+#~ msgstr "बड़े डेस्कटॉप उपकरणों के लिए गैलरी कॉलम लेआउट का चयन करें।"
+
+#~ msgid "B. Columns On Desktops"
+#~ msgstr "ब. डेस्कटॉप पर कॉलम"
+
+#~ msgid "Select gallery column layout for desktop devices."
+#~ msgstr "डेस्कटॉप डिवाइस के लिए गैलरी कॉलम लेआउट का चयन करें।"
+
+#~ msgid "C. Columns On Tablets"
+#~ msgstr "स. कॉलम ऑन टैबलेट्स"
+
+#~ msgid "Select gallery column layout for tablet devices."
+#~ msgstr "टेबलेट उपकरणों के लिए गैलरी कॉलम लेआउट का चयन करें।"
+
+#~ msgid "D. Columns On Phones"
+#~ msgstr "ड. फोन पर कॉलम"
+
+#~ msgid "Select gallery column layout for phone devices."
+#~ msgstr "फोन उपकरणों के लिए गैलरी कॉलम लेआउट का चयन करें।"
+
+#~ msgid "3. Light Box Style"
+#~ msgstr "3. लाइट बॉक्स स्टाइल"
+
+#~ msgid "4. Image Hover Effect Type"
+#~ msgstr "4. छवि हॉवर प्रभाव प्रकार"
+
+#~ msgid "Shadow & Glow"
+#~ msgstr "छाया और चमक"
+
+#~ msgid "Select and Set a image hover effect type for gallery."
+#~ msgstr "गैलरी के लिए एक छवि होवर प्रभाव प्रकार चुनें और सेट करें।"
+
+#~ msgid "Image Hover Effects"
+#~ msgstr "छवि हॉवर प्रभाव"
+
+#~ msgid "5. Image Hover Effects"
+#~ msgstr "5. छवि हॉवर प्रभाव"
+
+#~ msgid "6. Hide Thumbnails Spacing"
+#~ msgstr "6. छुपाएँ रिक्ति"
+
+#~ msgid "Hide gap / margin / padding / spacing between gallery thumbnails."
+#~ msgstr "गैलरी थंबनेल के बीच अंतर / मार्जिन / पैडिंग / रिक्ति छिपाएं।"
+
+#~ msgid "7. Gallery Thumbnail Order"
+#~ msgstr "7. गैलरी थंबनेल आदेश"
+
+#~ msgid "Old First"
+#~ msgstr "पुराना पहला"
+
+#~ msgid "New First"
+#~ msgstr "नया पहला"
+
+#~ msgid "Random"
+#~ msgstr "बिना सोचे समझे"
+
+#~ msgid "Set a image order in which you want to display gallery thumbnails."
+#~ msgstr "एक छवि क्रम सेट करें जिसमें आप गैलरी थंबनेल दिखाना चाहते हैं।"
+
+#~ msgid "8. Open Image Link URL"
+#~ msgstr "8. छवि लिंक URL खोलें"
+
+#~ msgid "Into New Tab"
+#~ msgstr "नए टैब में"
+
+#~ msgid "Into Same Tab"
+#~ msgstr "एक ही टैब में"
+
+#~ msgid "Set a image URL opening target."
+#~ msgstr "एक छवि URL खोलने का लक्ष्य निर्धारित करें।"
+
+#~ msgid "1. Load More On Gallery"
+#~ msgstr "1. गैलरी पर अधिक लोड करें"
+
+#~ msgid "Set load more button on gallery"
+#~ msgstr "गैलरी पर लोड अधिक बटन सेट करें"
+
+#~ msgid "Note: Load More not work with Poptrox and Viewer Lightbox."
+#~ msgstr "नोट: लोड अधिक पॉपट्रोक्स और व्यूअर लाइटबॉक्स के साथ काम नहीं करता है।"
+
+#~ msgid "A. Image Limit For Load More"
+#~ msgstr "A. छवि सीमा अधिक लोड के लिए"
+
+#~ msgid "Set limit for defaul gallery and load more button."
+#~ msgstr "डिफॉल गैलरी के लिए सीमा निर्धारित करें और अधिक बटन लोड करें।"
+
+#~ msgid "B. Test For Load More Button"
+#~ msgstr "ब. लोड अधिक बटन के लिए टेस्ट"
+
+#~ msgid "C. Load More Button Color"
+#~ msgstr "C. अधिक बटन रंग लोड करें"
+
+#~ msgid "Apply own css on image gallery and dont use style tag."
+#~ msgstr "छवि गैलरी पर स्वयं के सीएसएस लागू करें और शैली टैग का उपयोग न करें।"
+
+#~ msgid "Image Gallery"
+#~ msgstr "छवि गैलरी"
+
+#~ msgid "Shortcode"
+#~ msgstr "शार्टकोड"
+
+#~ msgid "Docs"
+#~ msgstr "दस्तावेज़"
+
+#~ msgid "Image Gallery Premium"
+#~ msgstr "छवि गैलरी प्रीमियम"
+
+#~ msgid "All Image Gallery"
+#~ msgstr "सभी छवि गैलरी"
+
+#~ msgid "Add New Image Gallery"
+#~ msgstr "नई छवि गैलरी जोड़ें"
+
+#~ msgid "Add Image Gallery"
+#~ msgstr "छवि गैलरी जोड़ें"
+
+#~ msgid "New Image Gallery"
+#~ msgstr "नई छवि गैलरी"
+
+#~ msgid "Edit Image Gallery"
+#~ msgstr "छवि गैलरी संपादित करें"
+
+#~ msgid "Update Image Gallery"
+#~ msgstr "अद्यतन छवि गैलरी"
+
+#~ msgid "Search Image Gallery"
+#~ msgstr "छवि गैलरी खोजें"
+
+#~ msgid "Image Gallery Not found"
+#~ msgstr "छवि गैलरी नहीं मिली"
+
+#~ msgid "Image Gallery Not found in Trash"
+#~ msgstr "छवि गैलरी कूड़ेदान में नहीं मिली"
+
+#~ msgid "Custom Post Type For Image Gallery"
+#~ msgstr "छवि गैलरी के लिए कस्टम पोस्ट प्रकार"
+
+#~ msgid "Copy Image Gallery Shortcode"
+#~ msgstr "इमेज गैलरी शोर्ट कॉपी करें"
+
+#~ msgid "Add Image"
+#~ msgstr "छवि जोड़ें"
+
+#~ msgid "Copy Shortcode"
+#~ msgstr "शार्टकोड कॉपी करें"
+
+#~ msgid "copied"
+#~ msgstr "नकल की"
+
+#~ msgid "Delete All Images"
+#~ msgstr "सभी छवियाँ हटाएं"
+
+#~ msgid "Image Gallery Setting"
+#~ msgstr "छवि गैलरी सेटिंग"
+
+#, fuzzy
+#~| msgid "Sorry! No image gallery found "
+#~ msgid "Sorry! No images found in gallery."
+#~ msgstr "माफ़ कीजिये! कोई छवि गैलरी नहीं मिली"
+
+#~ msgid "Sorry! No image gallery found "
+#~ msgstr "माफ़ कीजिये! कोई छवि गैलरी नहीं मिली"

@@ -1,221 +1,137 @@
-﻿=== Testimonial Customer Feedback ===
+=== Testimonial Customer Feedback ===
 Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK
 Donate link: https://paypal.me/awplife
 Tags: testimonial, testimonials, customer reviews, client feedback, review slider
 Requires at least: 5.0
-Tested up to: 6.9
-Stable tag: 1.2.6
+Tested up to: 7.0
+Stable tag: 1.2.7
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Display client testimonials with customizable layouts, slider effects, and responsive design. Simple setup with shortcode support.
+Display client testimonials with customizable layouts, slider effects, and responsive design. Simple setup with shortcode support and frontend submission form.
 
 == Description ==
 
-= A Complete Testimonial Solution for Customer Review, Rating, and Feedback =
+= Showcase Customer Reviews, Ratings, and Feedback with Ease =
 
-Starter Testimonial helps you showcase customer feedback and client reviews on your WordPress website. Whether you run a small business, agency, or e-commerce store, displaying genuine testimonials builds trust with potential customers.
+Displaying genuine client feedback on your website builds instant trust and boosts conversions. **Testimonial Customer Feedback** is a highly customizable WordPress testimonial plugin that lets you showcase reviews in beautiful slider or grid layouts.
 
-**Check Pro Demo:** **[Testimonial Premium](https://awplife.com/demo/testimonial-premium/)**
-**More About Pro:** **[Testimonial Premium Details](https://awplife.com/wordpress-plugins/testimonial-wordpress-plugin/)**
-**Where To Buy:** **[Buy Testimonial Premium](https://awplife.com/account/signup/testimonial-premium)**
+Featuring a built-in **Frontend Form Builder**, you can collect customer reviews directly from your site visitors and approve them with one click.
 
-= How To Use =
+**Check Pro Demo:** **[Testimonial Premium Demo](https://awplife.com/demo/testimonial-premium/)**  
+**Learn More About Pro:** **[Testimonial Premium Details](https://awplife.com/wordpress-plugins/testimonial-wordpress-plugin/)**  
+**Upgrade to Pro:** **[Buy Testimonial Premium](https://awplife.com/account/signup/testimonial-premium)**
 
-https://youtu.be/bB1RmgGVwTY
+---
 
-This testimonial plugin creates a dedicated post type for managing reviews. Add client names, photos, designations, and website links for each testimonial. Once saved, embed your testimonials anywhere using a simple shortcode.
+== Free Version Features ==
 
-= Why Use Testimonials on Your Website? =
+* **3 Responsive Design Themes:** Beautiful predefined presets to highlight testimonials cleanly.
+* **Layout Presets:** Display testimonials in a modern **Slider Carousel** or a static **Grid layout**.
+* **Frontend Form Builder (Standard Fields):** Let visitors submit reviews directly on your site. Choose to show/hide standard fields:
+  * Full Name
+  * Designation
+  * Website URL
+  * Category Select
+  * Testimonial Content
+  * Client Image/Avatar
+  * Star Rating
+* **Inline SVG Navigation Arrows:** Choose from 5 different SVG navigation arrow styles (Chevron, Caret, Simple Arrow, Long Arrow, and Double Chevron) for smooth slider navigation (Vertical Outer position only).
+* **Interactive Slider Options:** Control autoplay, slide speed, touch swipe, grab cursor, infinite loop, and pause-on-hover actions.
+* **Star Ratings Support:** Enable visitor rating stars and customize star coloring to match your website theme.
+* **Easy Categorization:** Classify reviews by categories and show specific testimonials using category filters.
+* **Styling Customization:** Custom options for title color, description color, rating colors, and typography settings.
+* **One-Click Shortcode Duplication:** Clone layout configurations and generate new shortcodes instantly.
 
-Customer reviews influence buying decisions. When visitors see positive feedback from real clients, they feel more confident about your products or services. A well-placed testimonial section can:
+---
 
-* Build credibility with first-time visitors
-* Highlight your track record and expertise
-* Increase conversions on landing pages
-* Add social proof to service pages
+== Premium Version (PRO) Features ==
 
-= Core Features =
+Upgrade to the premium version to unlock advanced controls:
 
-**Easy Testimonial Management**
-Add testimonials like regular posts. Include client name as the title, feedback in the editor, and upload a profile photo using the featured image option.
+* **14 Additional Design Themes:** Choose from 17 stunning layout templates to fit any design.
+* **5 Layout Presets:** Access Grid, Slider, Masonry, List, and dynamic Live AJAX Category Filters.
+* **Advanced Navigation Positions:** Choose from 9 different arrow positions (Top Left/Center/Right, Bottom Left/Center/Right, Vertical Inner/Center/Outer) to customize navigation layouts.
+* **Live AJAX Category Filters:** Add frontend tab filters to let users filter testimonials instantly.
+* **Advanced Form Builder Fields:** Collect premium reviewer information:
+  * **Video Record & Uploads:** Let users record video reviews or add YouTube/Vimeo URLs.
+  * **Social Profiles Integration:** Capture links to clients' Facebook, Twitter, and LinkedIn profiles.
+  * **Google reCAPTCHA v2:** Integrated bot protection to prevent spam submissions.
+* **Form Background Customization:** Upload custom background images and select position overlays inside the form editor.
+* **Advanced Typography:** Customize Google Fonts, sizes, line heights, and font weights.
+* **SEO Schema Rich Snippets:** Google Search Console rating schema integration to show star ratings on Google Search results pages.
+* **Random Sorting:** Randomize testimonials order dynamically on page load.
+* **RTL (Right-to-Left) Support:** Full support for Right-to-Left languages (like Arabic, Hebrew, Urdu) in sliders.
+* **CSV Import & Export:** Bulk import/export settings and testimonial entries.
+* **Custom CSS Editor:** Add custom style overrides directly inside the admin settings panel.
+* **Priority Email Support:** Fast and dedicated technical assistance.
 
-**Client Information Fields**
-Each testimonial includes fields for client designation (job title or role) and website URL. Display these details alongside the review.
-
-**Shortcode Integration**
-Generate a shortcode to place testimonials in pages, posts, or text widgets. Works with any theme.
-
-**Responsive Slider Display**
-Testimonials appear in a slider format that adapts to mobile, tablet, and desktop screens. Visitors can browse through reviews smoothly.
-
-**Template Options**
-Choose from 8 layout designs to match your website style. Each template presents testimonials differently.
-
-**Color Customization**
-Adjust colors for title text, designation, and testimonial content. Match the display with your brand colors.
-
-**Star Ratings**: (If applicable) Visualize customer satisfaction.
-
-**Autoplay Control**
-Enable or disable automatic sliding. Configure pagination bullets for manual navigation.
-
-**Column Settings**
-Control how many testimonials appear per row based on your layout preferences.
-
-= How It Works =
-
-1. Go to Testimonial Maker menu in your dashboard
-2. Click "Add New Testimonial"
-3. Enter client name as title and feedback in the editor
-4. Add designation and website link in the meta fields
-5. Set a featured image for the client photo
-6. Publish and configure display settings
-7. Copy the shortcode and paste it where you want testimonials to appear
-
-= Use Cases =
-
-* **Service Businesses** – Show client feedback on your homepage or services page
-* **Freelancers** – Add testimonials to your portfolio
-* **Online Stores** – Display product reviews in a slider widget
-* **Agencies** – Feature client success stories
-
-= Free vs Pro Comparison =
-
-**Free Version Includes:**
-
-* Unlimited testimonials
-* 8 template designs
-* Video Testimonial (Youtube Video)
-* Star Ratings
-* Star Rating Color
-* Video Playback Mode
-* Box Shadow
-* Border Radius
-* Animation Speed
-* Hover Effect
-* Animation Speed
-* Image Shape
-* Lazy Loading
-* Responsive slider
-* Basic color options (title, designation, description)
-* Single transition effect
-* Autoplay toggle
-* Pagination bullets
-* Column layout settings
-* Shortcode embedding
-* Widget compatible
-
-**[Testimonial Premium Version](https://awplife.com/wordpress-plugins/testimonial-wordpress-plugin/) Adds:**
-
-* 27 template designs
-* Video Testimonial (Youtube,Vimeo,Local)
-* Star Ratings
-* Star Rating Color
-* Video Playback Mode
-* Star Ratings Hide & Show
-* Testimonial Order
-* Auto Height Content
-* RTL Support
-* Autoplay toggle
-* Image Shape
-* Multiple animated transition effects
-* Transition speed control
-* Unlimited color customization
-* Font size adjustment
-* 2 pagination styles
-* Column layout settings
-* Custom CSS input field
-* Priority support
-
-= Testimonial Slider Works With =
-
-* All standard WordPress themes
-* Page builders (using shortcode blocks)
-* Widget areas and sidebars
-* Custom post layouts
-
-== Our More Free Plugins ==
-
-* [Portfolio Filter Gallery](https://wordpress.org/plugins/portfolio-filter-gallery/)
-* [Media Slider](https://wordpress.org/plugins/media-slider/)
-* [Weather Effect Plugin](https://wordpress.org/plugins/weather-effect/)
-* [Grid Gallery Plugin](https://wordpress.org/plugins/new-grid-gallery/)
-* [Image Gallery Plugin](https://wordpress.org/plugins/new-image-gallery/)
-* [Responsive Slider Gallery](https://wordpress.org/plugins/responsive-slider-gallery/)
+---
 
 == Installation ==
 
-1. Upload the plugin folder to `/wp-content/plugins/` directory or install directly from the WordPress plugin repository
-2. Activate the plugin through the Plugins menu
-3. Navigate to Testimonial Maker in your admin menu
-4. Click "Add New Testimonial" to create your first testimonial
-5. Configure display settings under "Testimonial Setting"
-6. Copy the generated shortcode and paste it into any page or post
+1. Upload the plugin folder to the `/wp-content/plugins/` directory or install it directly via **Plugins > Add New** from the WordPress admin panel.
+2. Activate the plugin.
+3. Navigate to **Testimonial Maker** in your WordPress dashboard menu.
+4. Click **Add New Testimonial** to publish your first client review.
+5. Create a Shortcode, select templates and settings, then copy and paste the generated shortcode (e.g. `[TML_FORM id="X"]` or `[TML_SHORTCODE id="Y"]`) into any page or post.
+
+---
 
 == Frequently Asked Questions ==
 
-= How do I add a new testimonial? =
+= How do I collect testimonials from website visitors? =
+Go to **Testimonial Maker > Form Builder**, configure the fields, copy the form shortcode (e.g., `[TML_FORM id="25"]`), and paste it on any public page. Visited users can then submit reviews.
 
-Go to Testimonial Maker > Add New Testimonial. Enter the client's name as the title, write their feedback in the content editor, and optionally add a featured image for their photo.
+= Where do testimonials go after frontend submission? =
+All submitted testimonials are saved as "Pending" drafts. Go to **Testimonial Maker > All Testimonials** in your dashboard to review and approve/publish them.
 
-= Where do I find the shortcode? =
+= Can I show reviews in a sidebar? =
+Yes! Add a Custom HTML or Text widget to your sidebar, paste the shortcode, and save it.
 
-After saving your testimonials, visit the Testimonial Setting page. The shortcode will be displayed there. Copy and paste it into any page, post, or text widget.
+= Does it support video testimonials? =
+The Free version supports standard text-based reviews. To let customers record videos or upload YouTube/Vimeo links via the submission form, upgrade to the Premium version.
 
-= Can I show testimonials in a sidebar widget? =
+= How do I change the rating star colors? =
+Navigate to **Testimonial Maker > Shortcodes**, open your shortcode settings, find the **Star Color** panel under settings tabs, and select your custom hex color.
 
-Yes. Add a Text widget to your sidebar and paste the testimonial shortcode inside it. The testimonials will display in the widget area.
+= Can I customize the order in which testimonials are displayed? =
+Yes. In the settings panel under Carousel / Layout settings, you can choose sorting orders like Newest First or Oldest First. Upgrading to the PRO version unlocks dynamic Random Sorting on page load.
 
-= Does this plugin work with my theme? =
+= How do I show only testimonials from a specific category? =
+When creating/editing a testimonial, assign it to a category. When editing a shortcode, select the specific category from the Category settings dropdown to display only reviews matching that category.
 
-The plugin is designed to work with any properly coded WordPress theme. The responsive design adapts to different theme layouts.
+= Can I control the number of columns on mobile devices? =
+Yes. The plugin is mobile-responsive. Under shortcode column settings, you can define specific column layouts for Desktop, Tablet, and Mobile devices separately.
 
-= How do I change the testimonial colors? =
+= Can I customize the colors and text of the submit button on the frontend form? =
+Yes. Go to **Testimonial Maker > Form Builder**, click on the **Form Styles** tab. There you can customize button label text, background colors, hover state colors, and input border radius to match your theme.
 
-Go to Testimonial Setting in your admin menu. You will find color options for title, designation, and description text.
+= Can I hide fields like Client Designation or Website URL from the display? =
+Yes. The shortcode options panel contains toggle checkboxes to show or hide the user's designation, avatar, rating stars, content, and website link, letting you clean up the testimonial cards.
 
-= Can I control how many testimonials show at once? =
-
-Yes. The settings page includes column options to display testimonials in different grid layouts.
-
-= Is the slider mobile friendly? =
-
-The testimonial slider is fully responsive. It automatically adjusts for smartphones, tablets, and desktop screens.
-
-= How do I disable autoplay on the slider? =
-
-Navigate to Testimonial Setting and find the autoplay toggle option. You can turn off automatic sliding from there.
-
-= Can I add a client website link? =
-
-When creating a testimonial, you will see a field for "Client Website URL". Enter the URL and it will be linked with the testimonial.
-
-= What is the difference between free and pro version? =
-
-The free version includes 4 templates, basic colors, and standard slider features. The pro version offers 23 templates, animated transitions, unlimited colors, font customization, and custom CSS options.
-
-= How do I upgrade to the pro version? =
-
-Visit [awplife.com/](https://awplife.com/) to purchase the premium version with additional features.
-
-= Where can I get support? =
-
-For free version support, use the [WordPress.org support forum](https://wordpress.org/support/plugin/testimonial-maker/). Pro users receive priority support through the AWP Life website.
+---
 
 == Screenshots ==
 
-1. Testimonial preview
-2. Testimonial preview 
-3. Testimonial preview 
-4. Testimonial preview 
-5. Testimonial preview 
-6. Testimonial preview 
-7. Testimonial preview 
-8. Testimonial preview 
+1. Testimonial presets settings UI
+2. Responsive Slider Carousel theme preset
+3. Grid theme preset
+4. Testimonial Feedback Form
+5. Testimonial Search
+6. Slider preset Design 2
+7. Slider preset Design 3
+8. Slider Preview
+9. Testimonial Form Builder
+---
 
 == Changelog ==
+
+= 1.2.7 =
+* Updated: Completely redesigned and updated the testimonial design layouts.
+* Added: Fully integrated frontend testimonial submission form with many exciting features.
+* Improved: Performance optimizations, cleaner core workflows, and layout styling fixes.
 
 = 1.2.6 =
 * Template 5,6,7,8 Added
@@ -243,5 +159,5 @@ For free version support, use the [WordPress.org support forum](https://wordpres
 
 == Upgrade Notice ==
 
-= 1.2.5 =
-Fixes translation loading notice that appears in WordPress 6.7 and later versions. Update recommended.
+= 1.2.7 =
+Important update: Legacy verification token fields removed, submission flow streamlined to pending review, and comparison settings table updated. Recommended update.
