@@ -4,12 +4,12 @@ Donate link: https://paypal.me/awplife
 Tags: testimonial, testimonials, customer reviews, client feedback, review slider
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Display client testimonials with customizable layouts, slider effects, and responsive design. Simple setup with shortcode support and frontend submission form.
+Showcase customer reviews and feedback. Display testimonials in slider or grid layouts with a built-in frontend submission form builder.
 
 == Description ==
 
@@ -23,7 +23,6 @@ Featuring a built-in **Frontend Form Builder**, you can collect customer reviews
 **Learn More About Pro:** **[Testimonial Premium Details](https://awplife.com/wordpress-plugins/testimonial-wordpress-plugin/)**  
 **Upgrade to Pro:** **[Buy Testimonial Premium](https://awplife.com/account/signup/testimonial-premium)**
 
----
 
 == Free Version Features ==
 
@@ -44,7 +43,6 @@ Featuring a built-in **Frontend Form Builder**, you can collect customer reviews
 * **Styling Customization:** Custom options for title color, description color, rating colors, and typography settings.
 * **One-Click Shortcode Duplication:** Clone layout configurations and generate new shortcodes instantly.
 
----
 
 == Premium Version (PRO) Features ==
 
@@ -67,7 +65,18 @@ Upgrade to the premium version to unlock advanced controls:
 * **Custom CSS Editor:** Add custom style overrides directly inside the admin settings panel.
 * **Priority Email Support:** Fast and dedicated technical assistance.
 
----
+
+== Screenshots ==
+
+1. Testimonial presets settings UI
+2. Responsive Slider Carousel theme preset
+3. Grid theme preset
+4. Testimonial Feedback Form
+5. Testimonial Search
+6. Slider preset Design 2
+7. Slider preset Design 3
+8. Slider Preview
+9. Testimonial Form Builder
 
 == Installation ==
 
@@ -111,22 +120,11 @@ Yes. Go to **Testimonial Maker > Form Builder**, click on the **Form Styles** ta
 = Can I hide fields like Client Designation or Website URL from the display? =
 Yes. The shortcode options panel contains toggle checkboxes to show or hide the user's designation, avatar, rating stars, content, and website link, letting you clean up the testimonial cards.
 
----
-
-== Screenshots ==
-
-1. Testimonial presets settings UI
-2. Responsive Slider Carousel theme preset
-3. Grid theme preset
-4. Testimonial Feedback Form
-5. Testimonial Search
-6. Slider preset Design 2
-7. Slider preset Design 3
-8. Slider Preview
-9. Testimonial Form Builder
----
 
 == Changelog ==
+
+= 1.2.8 =
+* Fixed: Resolved unclosed HTML elements inside the Display Settings tab that corrupted layout structure.
 
 = 1.2.7 =
 * Updated: Completely redesigned and updated the testimonial design layouts.
@@ -158,6 +156,9 @@ Yes. The shortcode options panel contains toggle checkboxes to show or hide the 
 * Tested with WordPress 6.7.1
 
 == Upgrade Notice ==
+
+= 1.2.8 =
+Fixes layout nesting issues, corrects settings tab loading lifecycles, and improves Go PRO comparison dashboard design.
 
 = 1.2.7 =
 Important update: Legacy verification token fields removed, submission flow streamlined to pending review, and comparison settings table updated. Recommended update.

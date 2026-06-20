@@ -5,9 +5,9 @@ if (!defined('ABSPATH')) {
 /**
 @package Testimonial Maker
  * Plugin Name:       Testimonial Maker
- * Plugin URI:        https://awplife.com/wordpress-plugins/testimonial-premium/
+ * Plugin URI:        https://awplife.com/wordpress-plugins/testimonial-wordpress-plugin/
  * Description:       A very easy Plugin for make testimonials.
- * Version:           1.2.7
+ * Version:           1.2.8
  * Requires at least: 5.0
  * Requires PHP:      7.0
  * Author:            A WP Life
@@ -47,7 +47,7 @@ if (!class_exists('tml_or_testimonial')) {
 			define('TML_IS_PRO', false);
 
 			//Plugin Version
-			define('TML_PLUGIN_VER', '1.2.7');
+			define('TML_PLUGIN_VER', '1.2.8');
 
 			//Plugin Text Domain
 			define('TML_TXTDM', 'testimonial-maker');
@@ -75,6 +75,9 @@ if (!class_exists('tml_or_testimonial')) {
 
 			//add testimonial menu item, change menu filter for multisite
 			add_action('admin_menu', array($this, 'tmonial_menu'), 101);
+
+			// Register Admin Scripts
+			add_action('admin_enqueue_scripts', array($this, 'tml_admin_enqueue_scripts'));
 
 			//Create testimonial Filter testimonial Custom Post
 			add_action('init', array($this, 'Testimonial'));
@@ -134,7 +137,9 @@ if (!class_exists('tml_or_testimonial')) {
 		{
 			add_submenu_page('edit.php?post_type=' . TML_PLUGIN_SLUG, __('Import/Export', 'testimonial-maker'), __('Import/Export', 'testimonial-maker'), 'administrator', 'tml-import-export', array($this, '_tml_import_export_page'));
 			add_submenu_page('edit.php?post_type=' . TML_PLUGIN_SLUG, __('Analytics', 'testimonial-maker'), __('Analytics', 'testimonial-maker'), 'administrator', 'tml-analytics', array($this, '_tml_analytics_page'));
-			add_submenu_page('edit.php?post_type=' . TML_PLUGIN_SLUG, __('Go PRO', 'testimonial-maker'), '<span style="color:#d63638; font-weight:bold;">' . __('Go PRO ★', 'testimonial-maker') . '</span>', 'administrator', 'tml-go-pro', array($this, '_tml_go_pro_page'));
+			add_submenu_page('edit.php?post_type=' . TML_PLUGIN_SLUG, __('Docs', 'testimonial-maker'), __('Docs', 'testimonial-maker'), 'administrator', 'tml-docs', array($this, '_tml_docs_page'));
+			add_submenu_page('edit.php?post_type=' . TML_PLUGIN_SLUG, __('Free Plugins', 'testimonial-maker'), __('Free Plugins', 'testimonial-maker'), 'administrator', 'tml-free-plugins', array($this, '_tml_free_plugins_page'));
+			add_submenu_page('edit.php?post_type=' . TML_PLUGIN_SLUG, __('Free Themes', 'testimonial-maker'), __('Free Themes', 'testimonial-maker'), 'administrator', 'tml-free-themes', array($this, '_tml_free_themes_page'));
 		}
 
 		public function _tml_import_export_page()
@@ -354,9 +359,27 @@ if (!class_exists('tml_or_testimonial')) {
 			require_once('include/testimonial-setting.php');
 		}
 
-		public function _tml_go_pro_page()
+		public function _tml_free_plugins_page()
 		{
-			require_once(TML_PLUGIN_DIR . 'include/go-pro.php');
+			require_once(TML_PLUGIN_DIR . 'our-plugins.php');
+		}
+
+		public function _tml_free_themes_page()
+		{
+			require_once(TML_PLUGIN_DIR . 'our-themes.php');
+		}
+
+		public function _tml_docs_page()
+		{
+			require_once(TML_PLUGIN_DIR . 'include/docs.php');
+		}
+
+		public function tml_admin_enqueue_scripts($hook)
+		{
+			if (isset($_GET['page']) && ($_GET['page'] === 'tml-free-plugins' || $_GET['page'] === 'tml-free-themes')) {
+				wp_enqueue_style('tml-our-plugins-style', TML_PLUGIN_URL . 'assets/css/our-plugins-style.css', array(), TML_PLUGIN_VER);
+				add_thickbox();
+			}
 		}
 		public function tml_gutenberg_block_assets()
 		{

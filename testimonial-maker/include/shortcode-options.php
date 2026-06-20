@@ -449,28 +449,28 @@ if (isset($post_id['background'])) {
 
 
 
-if (isset($post_id['nfc'])) {
+if (isset($post_id['nfc']) && $post_id['nfc'] !== '') {
 	$tml_title_color = $post_id['nfc'];	// name text color set by shortcode
 } else {
-	if (isset($testimonial_settings['tml_title_color']))
+	if (isset($testimonial_settings['tml_title_color']) && $testimonial_settings['tml_title_color'] !== '')
 		$tml_title_color = $testimonial_settings['tml_title_color'];
 	else
 		$tml_title_color = "#000000";
 }
 
-if (isset($post_id['tfc'])) {
+if (isset($post_id['tfc']) && $post_id['tfc'] !== '') {
 	$tml_description_color = $post_id['tfc'];	// testimonial text color set by shortcode
 } else {
-	if (isset($testimonial_settings['tml_description_color']))
+	if (isset($testimonial_settings['tml_description_color']) && $testimonial_settings['tml_description_color'] !== '')
 		$tml_description_color = $testimonial_settings['tml_description_color'];
 	else
 		$tml_description_color = "#000000";
 }
 
-if (isset($post_id['dfc'])) {
+if (isset($post_id['dfc']) && $post_id['dfc'] !== '') {
 	$tml_designation_color = $post_id['dfc'];	// designation text color set by shortcode
 } else {
-	if (isset($testimonial_settings['tml_designation_color']))
+	if (isset($testimonial_settings['tml_designation_color']) && $testimonial_settings['tml_designation_color'] !== '')
 		$tml_designation_color = $testimonial_settings['tml_designation_color'];
 	else
 		$tml_designation_color = "#000000";

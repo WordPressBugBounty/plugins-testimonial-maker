@@ -24,6 +24,18 @@ if (!defined('ABSPATH')) exit;
 		// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 		$wrapper_id = '#tml-main-wrapper-' . esc_attr($post_id['id']);
 
+		// Always output base text colors so they work on every theme (dark/light) even without Advanced Typography
+		if (!empty($tml_title_color)) {
+			echo "body $wrapper_id .tml-testimonial-title, body $wrapper_id .tml-tagline, body $wrapper_id .testimonial-title, body $wrapper_id .tml-name { color: " . esc_attr($tml_title_color) . " !important; }\n";
+		}
+		if (!empty($tml_description_color)) {
+			echo "body $wrapper_id .tml-testimonial-content, body $wrapper_id .tml-content, body $wrapper_id .tml-description, body $wrapper_id .tml-desc { color: " . esc_attr($tml_description_color) . " !important; }\n";
+		}
+		if (!empty($tml_designation_color)) {
+			echo "body $wrapper_id .tml-designation, body $wrapper_id .tml-desig { color: " . esc_attr($tml_designation_color) . " !important; }\n";
+		}
+
+		// Advanced Typography overrides (includes font, size, weight, spacing, AND color — takes priority over base colors above)
 		if (!empty($typo_styles['tml_typo_title'])) {
 			echo "body $wrapper_id .tml-testimonial-title, body $wrapper_id .tml-tagline, body $wrapper_id .testimonial-title, body $wrapper_id .tml-name { {$typo_styles['tml_typo_title']} }\n";
 		}

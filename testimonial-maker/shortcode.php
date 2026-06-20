@@ -494,9 +494,9 @@ function tml_testimonial_shortcode($post_id)
 					$avg = ($rating_count > 0) ? round($total_rating / $rating_count, 1) : 0;
 					?>
 					<div class="tml-avg-rating-summary"
-						style="text-align: center; margin-bottom: 30px; padding: 20px; background: #f9f9f9; border-radius: 10px;">
-						<h4 style="margin: 0 0 10px 0;"><?php esc_html_e('Average Customer Rating', 'testimonial-maker'); ?></h4>
-						<div class="testimonial-rating" style="font-size: 24px;">
+						style="text-align: center; margin-bottom: 30px; padding: 20px; background: #f9f9f9; border-radius: 10px; color: #333;">
+						<h4 style="margin: 0 0 10px 0; color: #333;"><?php esc_html_e('Average Customer Rating', 'testimonial-maker'); ?></h4>
+						<div class="testimonial-rating" style="font-size: 24px; color: #333;">
 							<?php
 							for ($i = 1; $i <= 5; $i++) {
 								if ($i <= round($avg))
@@ -505,7 +505,7 @@ function tml_testimonial_shortcode($post_id)
 									echo '<i class="fa fa-star-o"></i>';
 							}
 							?>
-							<span style="font-size: 18px; margin-left: 10px;">(<?php echo esc_html($avg); ?> / 5)</span>
+							<span style="font-size: 18px; margin-left: 10px; color: #333;">(<?php echo esc_html($avg); ?> / 5)</span>
 						</div>
 						<p style="margin: 10px 0 0 0; color: #666;">
 							<?php
@@ -862,16 +862,20 @@ function tml_testimonial_shortcode($post_id)
 							if (is_numeric($size_val)) {
 								$size_val .= 'px';
 							}
-							// Colors & Borders
+							// Colors, Borders, and Theme Conflict Fixes
+							$nav_css .= "body $nav_id.owl-carousel { overflow: visible !important; }";
+							$nav_css .= "body $nav_id.owl-carousel .owl-stage-outer { overflow: hidden !important; }";
+							$nav_css .= "body $nav_id.owl-carousel .owl-nav { opacity: 1 !important; visibility: visible !important; pointer-events: none !important; z-index: 99999 !important; display: block !important; }";
+							
 							$nav_css .= "body $nav_id.owl-carousel .owl-nav button.owl-prev, body $nav_id.owl-carousel .owl-nav button.owl-next {";
 							$nav_css .= "color: $tml_nav_color !important;";
 							$nav_css .= "background: $tml_nav_bg_color !important;";
-							$nav_css .= "width: $size_val !important; height: $size_val !important; font-size: 18px !important; padding: 0 !important; border-radius: 8px !important; transition: all 0.3s; display: inline-flex !important; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;";
+							$nav_css .= "width: $size_val !important; height: $size_val !important; font-size: 18px !important; padding: 0 !important; border-radius: 8px !important; transition: all 0.3s; display: inline-flex !important; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important; opacity: 1 !important; visibility: visible !important; z-index: 999999 !important; pointer-events: auto !important; cursor: pointer !important;";
 							$nav_css .= "}";
 
 							// Hover opacity effect
 							$nav_css .= "body $nav_id.owl-carousel .owl-nav button.owl-prev:hover, body $nav_id.owl-carousel .owl-nav button.owl-next:hover {";
-							$nav_css .= "opacity: 0.9 !important; transform: scale(1.05) !important;";
+							$nav_css .= "opacity: 0.9 !important; transform: scale(1.05) !important; color: $tml_nav_color !important; background: $tml_nav_bg_color !important; cursor: pointer !important;";
 							$nav_css .= "}";
 
 							if ($tml_nav_mobile_hide == 'true') {
@@ -884,18 +888,20 @@ function tml_testimonial_shortcode($post_id)
 							// Positions
 							switch ($tml_nav_position) {
 								case 'vertical_outer':
+									// Pad the slider wrapper so the "outer" arrows fit inside the element bounds and never collide with sidebars
+									$nav_css .= "body $nav_id.owl-carousel { padding-left: 50px !important; padding-right: 50px !important; box-sizing: border-box !important; }";
 									$nav_css .= "$nav_id { position: relative; }";
-									$nav_css .= "$nav_id .owl-nav { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); pointer-events: none; }";
-									$nav_css .= "$nav_id .owl-nav button { pointer-events: auto; position: absolute; }";
-									$nav_css .= "$nav_id .owl-nav .owl-prev { left: -50px; }";
-									$nav_css .= "$nav_id .owl-nav .owl-next { right: -50px; }";
+									$nav_css .= "$nav_id .owl-nav { display: contents !important; }";
+									$nav_css .= "body $nav_id .owl-prev, body $nav_id .owl-next { position: absolute !important; top: 50% !important; transform: translateY(-50%) !important; }";
+									$nav_css .= "body $nav_id .owl-prev { left: 5px !important; }";
+									$nav_css .= "body $nav_id .owl-next { right: 5px !important; }";
 									break;
 								case 'vertical_inner':
 									$nav_css .= "$nav_id { position: relative; }";
-									$nav_css .= "$nav_id .owl-nav { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); pointer-events: none; }";
-									$nav_css .= "$nav_id .owl-nav button { pointer-events: auto; position: absolute; }";
-									$nav_css .= "$nav_id .owl-nav .owl-prev { left: 10px; }";
-									$nav_css .= "$nav_id .owl-nav .owl-next { right: 10px; }";
+									$nav_css .= "$nav_id .owl-nav { display: contents !important; }";
+									$nav_css .= "body $nav_id .owl-prev, body $nav_id .owl-next { position: absolute !important; top: 50% !important; transform: translateY(-50%) !important; }";
+									$nav_css .= "body $nav_id .owl-prev { left: 10px !important; }";
+									$nav_css .= "body $nav_id .owl-next { right: 10px !important; }";
 									break;
 								case 'top_right':
 									$nav_css .= "$nav_id { padding-top: 40px; }";
@@ -922,11 +928,13 @@ function tml_testimonial_shortcode($post_id)
 									$nav_css .= "$nav_id .owl-nav { position: absolute; bottom: 0; left: 0; display: flex; gap: 5px; }";
 									break;
 								case 'vertical_center':
+									// Pad the slider wrapper slightly to fit "center" outer arrows
+									$nav_css .= "body $nav_id.owl-carousel { padding-left: 35px !important; padding-right: 35px !important; box-sizing: border-box !important; }";
 									$nav_css .= "$nav_id { position: relative; }";
-									$nav_css .= "$nav_id .owl-nav { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); pointer-events: none; }";
-									$nav_css .= "$nav_id .owl-nav button { pointer-events: auto; position: absolute; }";
-									$nav_css .= "$nav_id .owl-nav .owl-prev { left: -30px; }";
-									$nav_css .= "$nav_id .owl-nav .owl-next { right: -30px; }";
+									$nav_css .= "$nav_id .owl-nav { display: contents !important; }";
+									$nav_css .= "body $nav_id .owl-prev, body $nav_id .owl-next { position: absolute !important; top: 50% !important; transform: translateY(-50%) !important; }";
+									$nav_css .= "body $nav_id .owl-prev { left: 5px !important; }";
+									$nav_css .= "body $nav_id .owl-next { right: 5px !important; }";
 									break;
 							}
 						} else {

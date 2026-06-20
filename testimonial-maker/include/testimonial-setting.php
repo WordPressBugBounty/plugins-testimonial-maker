@@ -1052,6 +1052,9 @@ if (!function_exists('tml_render_typography_section_pro')) {
                 <span
                     style="background: #cbd5e1; color: #ffffff; padding: 2px 5px; border-radius: 3px; font-family: sans-serif; font-size: 8px; font-weight: bold; line-height: 1; display: inline-block;">PRO</span>
             </a>
+            <a href="#tml-tab-gopro" class="tml-mui-nav-item" data-tab="tml-tab-gopro" style="color: #d63638; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+                <i class="fa fa-star" style="color: #d63638;"></i> <?php esc_html_e('Go PRO ★', 'testimonial-maker'); ?>
+            </a>
         </div>
 
         <!-- MUI Content -->
@@ -3860,15 +3863,18 @@ if (!function_exists('tml_render_typography_section_pro')) {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            </div> <!-- Close #tml-tab-display -->
+            <!-- GO PRO TAB -->
+            <div id="tml-tab-gopro" class="tml-tab-content">
+                <?php include(TML_PLUGIN_DIR . 'include/go-pro.php'); ?>
+            </div>
+        </div> <!-- Close .tml-mui-content -->
+    </div> <!-- Close .tml-mui-container -->
+</div> <!-- Close .tml-settings-wrapper -->
 
     <!-- Sticky Live Preview Action Button -->
     <button type="button" class="tml-sticky-preview-btn" id="tml-trigger-preview">
