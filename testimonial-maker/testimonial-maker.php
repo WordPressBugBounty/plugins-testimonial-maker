@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
  * Plugin Name:       Testimonial Maker
  * Plugin URI:        https://awplife.com/wordpress-plugins/testimonial-wordpress-plugin/
  * Description:       A very easy Plugin for make testimonials.
- * Version:           1.2.8
+ * Version:           1.2.9
  * Requires at least: 5.0
  * Requires PHP:      7.0
  * Author:            A WP Life
@@ -47,7 +47,7 @@ if (!class_exists('tml_or_testimonial')) {
 			define('TML_IS_PRO', false);
 
 			//Plugin Version
-			define('TML_PLUGIN_VER', '1.2.8');
+			define('TML_PLUGIN_VER', '1.2.9');
 
 			//Plugin Text Domain
 			define('TML_TXTDM', 'testimonial-maker');

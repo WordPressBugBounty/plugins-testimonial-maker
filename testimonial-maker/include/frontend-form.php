@@ -12,6 +12,10 @@ function tml_frontend_submission_form($atts)
         'display' => 'inline',
     ), $atts);
 
+    if (!empty($atts['id'])) {
+        $atts['id'] = is_numeric($atts['id']) ? absint($atts['id']) : preg_replace('/[^a-zA-Z0-9_]/', '', (string)$atts['id']);
+    }
+
     // Default form configuration
     $form_fields = array(
         'name' => array('label' => 'Your Name', 'placeholder' => '', 'required' => 'yes'),

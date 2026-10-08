@@ -27,10 +27,10 @@ if (!defined('ABSPATH'))
 			$(this).closest('.owl-carousel').trigger('next.owl.carousel');
 		});
 
-		window.initTmlRatingPositioning_<?php echo esc_attr($post_id['id']); ?> = function () {
+		window.initTmlRatingPositioning_<?php echo esc_js($post_id['id']); ?> = function () {
 			var ratingPos = "<?php echo esc_js($tml_ds_rating_pos); ?>";
 			if (ratingPos) {
-				var containerId = '#tml-main-wrapper-<?php echo esc_attr($post_id['id']); ?>';
+				var containerId = '#tml-main-wrapper-<?php echo esc_js($post_id['id']); ?>';
 				$(containerId + ' .tml-item-wrapper').each(function () {
 					var $card = $(this);
 					
@@ -77,6 +77,6 @@ if (!defined('ABSPATH'))
 		};
 
 		// Run on page load
-		window.initTmlRatingPositioning_<?php echo esc_attr($post_id['id']); ?>();
+		window.initTmlRatingPositioning_<?php echo esc_js($post_id['id']); ?>();
 	});
 </script>

@@ -3,8 +3,8 @@ Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkh
 Donate link: https://paypal.me/awplife
 Tags: testimonial, testimonials, customer reviews, client feedback, review slider
 Requires at least: 5.0
-Tested up to: 7.0
-Stable tag: 1.2.8
+Tested up to: 7.1
+Stable tag: 1.2.9
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -122,6 +122,9 @@ Yes. The shortcode options panel contains toggle checkboxes to show or hide the 
 
 
 == Changelog ==
+
+= 1.2.9 =
+* Fixed: Vulnerability.
 
 = 1.2.8 =
 * Fixed: Resolved unclosed HTML elements inside the Display Settings tab that corrupted layout structure.

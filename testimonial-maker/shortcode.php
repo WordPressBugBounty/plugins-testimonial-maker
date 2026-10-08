@@ -324,10 +324,18 @@ function tml_testimonial_shortcode($post_id)
 	}
 
 	$is_global_shortcode = false;
+	if ( isset( $post_id['id'] ) && ! empty( $post_id['id'] ) && $post_id['id'] !== 'global' ) {
+		if ( is_numeric( $post_id['id'] ) ) {
+			$post_id['id'] = absint( $post_id['id'] );
+		} else {
+			$post_id['id'] = preg_replace( '/[^a-zA-Z0-9_]/', '', (string) $post_id['id'] );
+		}
+	}
+
 	if ( ! isset( $post_id['id'] ) || empty( $post_id['id'] ) || $post_id['id'] === 'global' ) {
 		$default_id = get_option('tml_default_shortcode_id');
 		if ( ! empty( $default_id ) && get_post( $default_id ) ) {
-			$post_id['id'] = $default_id;
+			$post_id['id'] = absint( $default_id );
 			$is_global_shortcode = true;
 		} else {
 			$post_id['id'] = 'global';

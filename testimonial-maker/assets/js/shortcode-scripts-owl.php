@@ -7,7 +7,7 @@ if (!defined('ABSPATH'))
 ?>
 <script>
 	jQuery(document).ready(function ($) {
-		var owl = jQuery('#tml-carousel-<?php echo esc_attr($post_id['id']); ?>');
+		var owl = jQuery('#tml-carousel-<?php echo esc_js($post_id['id']); ?>');
 
 		// Save copy of original child slides for filtering before Owl carousel initializes
 		var originalSlides = [];
@@ -35,7 +35,7 @@ if (!defined('ABSPATH'))
 		<?php
 		$force_single_item = ($testimonial_carousel_design == 13) ? true : false;
 		?>
-		function initTmlOwlCarousel_<?php echo esc_attr($post_id['id']); ?>($owlEl) {
+		function initTmlOwlCarousel_<?php echo esc_js($post_id['id']); ?>($owlEl) {
 			$owlEl.owlCarousel({
 				items: <?php echo $force_single_item ? '1' : intval(!empty($tml_col_d) ? $tml_col_d : '3'); ?>,
 				margin: 30,
@@ -130,10 +130,10 @@ if (!defined('ABSPATH'))
 		}
 
 		// Store the init function reference
-		owl.data('owl-init-fn', initTmlOwlCarousel_<?php echo esc_attr($post_id['id']); ?>);
+		owl.data('owl-init-fn', initTmlOwlCarousel_<?php echo esc_js($post_id['id']); ?>);
 
 		// Call init for first-time page load
-		initTmlOwlCarousel_<?php echo esc_attr($post_id['id']); ?>(owl);
+		initTmlOwlCarousel_<?php echo esc_js($post_id['id']); ?>(owl);
 
 
 		<?php if ($tml_mouse_control == 'true') { ?>
